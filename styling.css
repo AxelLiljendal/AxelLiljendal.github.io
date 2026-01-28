@@ -1,4 +1,14 @@
 /* Light theme (default) */
+.profile-pic {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0078d7;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
