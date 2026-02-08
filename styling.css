@@ -15,7 +15,6 @@ header nav {
   background: #fff;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  border-bottom: 2px solid #0078d7;
 }
 
 header nav a {
@@ -136,7 +135,6 @@ body.dark-mode {
 body.dark-mode header nav {
   background: #101c3a;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-  border-bottom: 2px solid #00f0ff;
 }
 
 body.dark-mode header nav a {
