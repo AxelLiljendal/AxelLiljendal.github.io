@@ -41,10 +41,18 @@ header nav a:hover {
   color: #005fa3;
 }
 
-.header-left, .header-middle, .header-right {
+.header-left {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 2vw;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2vw;
 }
 
 #theme-toggle {
@@ -127,6 +135,32 @@ button:hover {
   margin-top: 1rem;
 }
 
+.header-name {
+  background: none;
+  border: none;
+  color: #0078d7;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0 0.9em 0 0;
+  margin: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  letter-spacing: 0.01em;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.header-name:hover,
+.header-name:focus {
+  color: #00f0ff;
+  text-decoration: underline;
+  background: none;
+}
+
 @media (max-width: 900px) {
   main.two-column {
     flex-direction: column;
@@ -155,13 +189,25 @@ body.dark-mode header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
+body.dark-mode header .header-name {
+  color: #fff;
+  background: none;
+}
+
+body.dark-mode header .header-name:hover,
+body.dark-mode header .header-name:focus {
+  color: white;
+  text-decoration: underline;
+  background: none;
+}
+
 body.dark-mode header nav {
   background: #101c3a;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 body.dark-mode header nav a {
-  color: #00f0ff;
+  color: white;
 }
 
 body.dark-mode header nav a:hover {
@@ -169,7 +215,7 @@ body.dark-mode header nav a:hover {
 }
 
 body.dark-mode #theme-toggle {
-  color: #00f0ff;
+  color: white;
 }
 
 body.dark-mode main.two-column {
@@ -187,12 +233,11 @@ body.dark-mode .right-column {
 }
 
 body.dark-mode .title {
-  color: #00f0ff;
+  color: white;
 }
 
 body.dark-mode button {
-  background: #00f0ff;
-  color: #101c3a;
+  color: white;
 }
 
 body.dark-mode button:hover {
@@ -200,6 +245,6 @@ body.dark-mode button:hover {
 }
 
 body.dark-mode .profile-pic {
-  border: 3px solid #00f0ff;
+  border: 3px solid white;
   box-shadow: 0 2px 8px rgba(0,240,255,0.15);
 }
