@@ -1,6 +1,10 @@
 /* Light theme (default) */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', 'Inter', 'Roboto', 'Arial', 'Helvetica Neue', system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #e0e7ff 0%, #f9fafb 50%, #c7d2fe 100%);
@@ -36,9 +40,10 @@ header nav a {
   transition: color 0.2s;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+header nav a:hover,
+header nav a:focus {
   color: #005fa3;
+  text-decoration: none;
 }
 
 .header-left {
@@ -156,8 +161,8 @@ button:hover {
 
 .header-name:hover,
 .header-name:focus {
-  color: #00f0ff;
-  text-decoration: underline;
+  color: #005fa3;
+  text-decoration: none;
   background: none;
 }
 
@@ -196,8 +201,8 @@ body.dark-mode header .header-name {
 
 body.dark-mode header .header-name:hover,
 body.dark-mode header .header-name:focus {
-  color: white;
-  text-decoration: underline;
+  color: #00f0ff;
+  text-decoration: none;
   background: none;
 }
 
@@ -210,8 +215,10 @@ body.dark-mode header nav a {
   color: white;
 }
 
-body.dark-mode header nav a:hover {
-  color: #fff;
+body.dark-mode header nav a:hover,
+body.dark-mode header nav a:focus {
+  color: #00f0ff;
+  text-decoration: none;
 }
 
 body.dark-mode #theme-toggle {
@@ -247,4 +254,22 @@ body.dark-mode button:hover {
 body.dark-mode .profile-pic {
   border: 3px solid white;
   box-shadow: 0 2px 8px rgba(0,240,255,0.15);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.header-name,
+header nav a,
+button,
+.title {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
 }
