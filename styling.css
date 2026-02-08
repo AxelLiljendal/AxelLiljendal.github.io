@@ -140,8 +140,41 @@ button:hover {
 
 .contact-buttons {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 1.2em;
+  margin-top: 2em;
+}
+
+.contact-buttons button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 54, 93, 0.85);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.contact-buttons button:hover {
+  background: #1976d2;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.contact-buttons svg {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-buttons text {
+  font-family: inherit;
+  font-weight: bold;
 }
 
 .header-name {
