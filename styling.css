@@ -37,6 +37,7 @@ header nav a {
   color: #0078d7;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.2rem;
   transition: color 0.2s;
 }
 
@@ -144,7 +145,7 @@ button:hover {
   background: none;
   border: none;
   color: #0078d7;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
