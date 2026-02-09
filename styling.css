@@ -320,6 +320,12 @@ button:hover {
   display: block;
 }
 
+body.dark-mode .download-cv-btn:hover,
+body.dark-mode .download-cv-btn:focus {
+  background: linear-gradient(90deg, #0044cc 0%, #00897a 100%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
 @media (max-width: 900px) {
   main.two-column {
     flex-direction: column;
