@@ -116,6 +116,72 @@ header {
   z-index: 100;
 }
 
+@media (max-width: 600px) {
+  .header-middle {
+    display: none;
+  }
+  #header-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    color: #0078d7;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  #header-dropdown:focus,
+  #header-dropdown:hover {
+    background: rgba(0,120,215,0.06);
+    border-radius: 8px;
+  }
+  .header-left { order: 1; }
+  .header-right { order: 2; margin-left: auto; display: flex; gap: 0.4rem; align-items: center; }
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .header-middle.mobile-active {
+    display: block;
+    position: static;
+    width: 100%;
+    background: inherit;
+    box-shadow: none;
+    order: 4;
+    flex-basis: 100%;
+  }
+  .header-middle.mobile-active nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  .header-middle.mobile-active nav a {
+    display: block;
+    padding: 0.6rem 0.5rem;
+    font-size: 1.1rem;
+    color: #0078d7;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1vw;
+  }
+  #theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+}
+
 header nav {
   display: flex;
   flex-direction: row;
