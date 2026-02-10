@@ -511,6 +511,20 @@ body.dark-mode::after {
     radial-gradient(circle at 55% 60%, rgba(0,140,255,0.10) 0, transparent 14%);
 }
 
+/* Dark-mode: social/contact buttons default (not hovered) should be grey */
+body.dark-mode .contact-buttons button {
+  background: #374151; /* gray-700 */
+  color: #e6eef6; /* light icon color */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+/* Dark-mode: hover should be light gray */
+body.dark-mode .contact-buttons button:hover {
+  background: #4b5563; /* slightly lighter gray than default */
+  color: #e6eef6; /* keep light icon color for contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 700;
