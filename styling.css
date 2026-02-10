@@ -272,7 +272,22 @@ main.two-column {
 .title {
   font-size: 1.2rem;
   color: #0078d7;
-  margin-bottom: 1.5rem;
+  margin: 0 0 0.35rem 0;
+}
+
+/* Reduce vertical spacing between name, title, school and location */
+.left-column h1 {
+  margin: 0 0 0.25rem 0;
+}
+.school,
+.location {
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+}
+
+/* Add extra spacing above the Download CV button */
+#resume-cv {
+  margin-top: 1.2rem;
 }
 
 section {
