@@ -275,7 +275,6 @@ main.two-column {
   margin: 0 0 0.35rem 0;
 }
 
-/* Reduce vertical spacing between name, title, school and location */
 .left-column h1 {
   margin: 0 0 0.25rem 0;
 }
@@ -285,9 +284,11 @@ main.two-column {
   font-weight: 500;
 }
 
-/* Add extra spacing above the Download CV button */
 #resume-cv {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
+}
+#resume-cv {
+  margin-top: 3rem;
 }
 
 section {
@@ -313,8 +314,7 @@ button:hover {
 .contact-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.2em;
-  margin-top: 2em;
+  gap: 1em;
 }
 
 .contact-buttons button {
