@@ -109,7 +109,7 @@ header {
   justify-content: space-between;
   gap: 1.5rem;
   background: #fff;
-  padding: 0.6rem 0; /* reduced vertical padding */
+  padding: 0.6rem 0; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   position: sticky;
   top: 0;
@@ -359,7 +359,7 @@ button:hover {
   cursor: pointer;
   padding: 0 0.9em 0 0;
   margin: 0;
-  height: 56px; /* slightly shorter to reduce header height */
+  height: 56px; 
   display: flex;
   align-items: center;
   transition: color 0.2s;
@@ -425,7 +425,6 @@ body.dark-mode .download-cv-btn:focus {
   }
 }
 
-/* Dark theme */
 body.dark-mode {
   background: linear-gradient(135deg, #041229 0%, #062044 100%);
   color: #f4f4f4;
@@ -449,7 +448,7 @@ body.dark-mode header .header-name:focus {
 }
 
 body.dark-mode header nav {
-  background: transparent; /* avoid inner boxed bar */
+  background: transparent;
   box-shadow: none;
 }
 
@@ -461,6 +460,25 @@ body.dark-mode header nav a:hover,
 body.dark-mode header nav a:focus {
   color: #00f0ff;
   text-decoration: none;
+}
+
+body.dark-mode .header-middle.mobile-active {
+  background: transparent;
+  box-shadow: none;
+}
+body.dark-mode .header-middle.mobile-active nav a {
+  color: white;
+}
+body.dark-mode .header-middle.mobile-active nav a:hover,
+body.dark-mode .header-middle.mobile-active nav a:focus {
+  color: #00f0ff;
+}
+body.dark-mode #header-dropdown {
+  color: white;
+  background: none;
+}
+body.dark-mode #theme-toggle {
+  color: white;
 }
 
 body.dark-mode #theme-toggle {
@@ -512,17 +530,15 @@ body.dark-mode::after {
     radial-gradient(circle at 55% 60%, rgba(0,140,255,0.10) 0, transparent 14%);
 }
 
-/* Dark-mode: social/contact buttons default (not hovered) should be grey */
 body.dark-mode .contact-buttons button {
-  background: #374151; /* gray-700 */
-  color: #e6eef6; /* light icon color */
+  background: #374151; 
+  color: #e6eef6; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 
-/* Dark-mode: hover should be light gray */
 body.dark-mode .contact-buttons button:hover {
-  background: #4b5563; /* slightly lighter gray than default */
-  color: #e6eef6; /* keep light icon color for contrast */
+  background: #4b5563;
+  color: #e6eef6;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
