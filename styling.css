@@ -313,7 +313,7 @@ main.two-column {
 
 .title {
   font-size: 1.2rem;
-  color: #0078d7;
+  color: #3d8fd1;
   margin: 0 0 0.35rem 0;
 }
 
@@ -524,10 +524,6 @@ body.dark-mode .left-column {
 
 body.dark-mode .right-column {
   background: transparent;
-}
-
-body.dark-mode .title {
-  color: #54a2e2;
 }
 
 body.dark-mode button {
