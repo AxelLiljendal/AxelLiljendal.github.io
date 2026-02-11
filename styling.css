@@ -224,6 +224,42 @@ header {
   }
 }
 
+/* Mobile-specific dark-mode optimizations */
+@media (max-width: 600px) {
+  body.dark-mode::before,
+  body.dark-mode::after {
+    animation: none !important;
+    opacity: 0.38 !important;
+    filter: blur(8px) !important;
+    transition: none !important;
+  }
+
+  body.dark-mode {
+    background: linear-gradient(135deg, #02121a 0%, #041229 100%);
+    color: #eef6fb;
+  }
+
+  body.dark-mode header,
+  body.dark-mode .header-middle.mobile-active {
+    background: #041229;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.55);
+  }
+
+  body.dark-mode #header-dropdown,
+  body.dark-mode #theme-toggle {
+    color: #eafcff;
+  }
+
+  body.dark-mode .header-middle.mobile-active nav a {
+    color: #eafcff;
+  }
+
+  body.dark-mode .download-cv-btn {
+    background: linear-gradient(90deg, #004a74 0%, #006b5a 100%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  }
+}
+
 header nav {
   display: flex;
   flex-direction: row;
