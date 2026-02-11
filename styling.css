@@ -327,10 +327,8 @@ main.two-column {
 }
 
 #resume-cv {
-  margin-top: 2rem;
-}
-#resume-cv {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 section {
