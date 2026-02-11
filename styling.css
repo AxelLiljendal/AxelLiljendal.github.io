@@ -371,13 +371,15 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(26, 54, 93, 0.85);
+  background: #374151;
+  color: #e6eef6;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s, box-shadow 0.2s;
 }
 
 .contact-buttons button:hover {
-  background: #1976d2;
+  background: #4b5563;
+  color: #e6eef6;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
