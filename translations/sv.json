@@ -13,6 +13,7 @@
     "goToTop": "Gå till toppen"
   },
   "theme": {
+    "selector": "Tema",
     "toggle": "Växla ljus/mörkt tema",
     "lightMode": "Växla till ljust läge",
     "darkMode": "Växla till mörkt läge",

@@ -13,6 +13,7 @@
     "goToTop": "Go to top"
   },
   "theme": {
+    "selector": "Theme",
     "toggle": "Toggle Dark/Light Theme",
     "lightMode": "Switch to light mode",
     "darkMode": "Switch to dark mode",
