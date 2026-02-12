@@ -134,6 +134,10 @@
       "project3": {
         "title": "Homi",
         "description": "En fullstack Airbnb-klon byggd i samarbete med ett team på 3 utvecklare. Innehåller fastighetslistor, användarautentisering och bokningssystem med separata backend- och frontend-repon."
+      },
+      "project4": {
+        "title": "HealthcareSDLC",
+        "description": "En samarbetsbaserad sjukvårdsbokningsapplikation utvecklad av ett team på 4 personer, med betoning på SDLC-metodik, DevOps och DevSecOps-metoder med automatiserade CI/CD-pipelines och kodkvalitetsövervakning."
       }
     }
   },
