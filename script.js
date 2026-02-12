@@ -1,6 +1,5 @@
-// Translation system
 const i18n = {
-  currentLanguage: 'sv', // Default language is Swedish
+  currentLanguage: 'sv',
   translations: {},
 
   async init() {
@@ -16,6 +15,7 @@ const i18n = {
       this.translations = await response.json();
       this.currentLanguage = lang;
       this.applyTranslations();
+      this.updateLanguageButton();
       document.documentElement.lang = lang;
       localStorage.setItem('language', lang);
     } catch (error) {
@@ -24,7 +24,6 @@ const i18n = {
   },
 
   applyTranslations() {
-    // Translate elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
       const translation = this.getNestedTranslation(key);
@@ -33,7 +32,6 @@ const i18n = {
       }
     });
 
-    // Translate aria-label attributes
     document.querySelectorAll('[data-i18n-aria]').forEach(element => {
       const key = element.getAttribute('data-i18n-aria');
       const translation = this.getNestedTranslation(key);
@@ -47,6 +45,15 @@ const i18n = {
     return key.split('.').reduce((obj, k) => obj?.[k], this.translations);
   },
 
+  updateLanguageButton() {
+    const langToggle = document.getElementById('lang-toggle');
+    if (!langToggle) return;
+
+    const nextLang = this.currentLanguage === 'sv' ? 'EN' : 'SV';
+    langToggle.textContent = nextLang;
+    langToggle.setAttribute('title', `Switch to ${nextLang === 'EN' ? 'English' : 'Swedish'}`);
+  },
+
   setupLanguageToggle() {
     const langToggle = document.getElementById('lang-toggle');
     if (!langToggle) return;
@@ -58,12 +65,10 @@ const i18n = {
   }
 };
 
-// Initialize translations
 document.addEventListener('DOMContentLoaded', () => {
   i18n.init();
 });
 
-// Theme system
 document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.getElementById('theme-toggle');
   const themeSelector = document.getElementById('theme-selector');
@@ -94,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function applyTheme(theme, darkMode) {
-    // Remove all theme classes
     document.body.classList.remove('dark-mode');
     document.body.removeAttribute('data-theme');
     
@@ -107,8 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
-    
-    // Update aria-label with current translation
+
     const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
     const translation = i18n.getNestedTranslation(ariaKey);
     if (translation) {
