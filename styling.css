@@ -887,6 +887,10 @@ section {
   scroll-margin-top: 100px;
 }
 
+.professional-summary p {
+  white-space: pre-line;
+}
+
 .content-sections {
   max-width: 1100px;
   margin: 10rem auto 3rem;

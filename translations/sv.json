@@ -32,7 +32,7 @@
   "sections": {
     "professionalSummary": {
       "title": "Professionell Sammanfattning",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "content": "Fullstack-utvecklarstudent på Teknikhögskolan (2-årig YH-utbildning) med primärt fokus på Java backend-utveckling och React frontend. Erfaren i att bygga strukturerade, underhållbara applikationer med fokus på ren arkitektur, RESTful API:er och databasdesign.\n\nStark grund i databaser, säkerhetsprinciper, DevOps och DevSecOps-metoder, inklusive CI/CD-arbetsflöden och versionshantering med Git med strukturerade förgreningsstrategier. Van vid att arbeta i agila miljöer med iterativ utveckling, kodgranskningar och samarbete i team.\n\nDriven av problemlösning, kontinuerligt lärande och att skriva skalbar, säker och produktionsorienterad kod."
     },
     "education": {
       "title": "Utbildning",
