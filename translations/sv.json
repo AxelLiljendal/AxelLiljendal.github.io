@@ -55,7 +55,62 @@
     },
     "experience": {
       "title": "Erfarenhet",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "timeline": {
+        "item1": {
+          "date": "Mars 2024 - Juli 2024",
+          "title": "Programmering 1 (gymnasiekurs)",
+          "location": "Gymnasiet",
+          "description": "Introduktion till programmeringsgrunder och beräkningstänkande."
+        },
+        "item2": {
+          "date": "Augusti 2024 - Oktober 2024",
+          "title": "Javaprogrammering i ett sammanhang",
+          "location": "Teknikhögskolan",
+          "description": "Omfattande Java-grunder, OOP-koncept och byggande av strukturerade applikationer."
+        },
+        "item3": {
+          "date": "Oktober 2024 - Januari 2025",
+          "title": "Databaser i ett sammanhang",
+          "location": "Teknikhögskolan",
+          "description": "Relationsdatabasdesign, SQL, datamodellering och databasoptimeringstekniker."
+        },
+        "item4": {
+          "date": "Januari 2025 - Mars 2025",
+          "title": "Backend i ett sammanhang",
+          "location": "Teknikhögskolan",
+          "description": "Avancerad backend-utveckling med Spring Boot, RESTful API:er och server-side arkitektur."
+        },
+        "item5": {
+          "date": "Mars 2025 - Maj 2025",
+          "title": "Frontend i ett sammanhang",
+          "location": "Teknikhögskolan",
+          "description": "Modern frontend-utveckling med React, komponentarkitektur och UI/UX-principer."
+        },
+        "item6": {
+          "date": "Augusti 2025 - September 2025",
+          "title": "Objektorienterad analys och design",
+          "location": "Teknikhögskolan",
+          "description": "Systemarkitektur, designmönster och OOAD-principer för skalbara applikationer."
+        },
+        "item7": {
+          "date": "September 2025 - December 2025",
+          "title": "Lärande i arbete 1",
+          "location": "Teknikhögskolan",
+          "description": "Praktisk arbetsplatsträning där förvärvade utvecklingsfärdigheter tillämpas i verkliga scenarion."
+        },
+        "item8": {
+          "date": "December 2025 - Januari 2026",
+          "title": "Producera och leverera mjukvara",
+          "location": "Teknikhögskolan",
+          "description": "Komplett mjukvarulivscykel från produktion till driftsättning och leverans."
+        },
+        "item9": {
+          "date": "Februari 2026 - Maj 2026",
+          "title": "Lärande i arbete 2 / Examensarbete",
+          "location": "Teknikhögskolan • Pågående",
+          "description": "Slutfas som kombinerar praktisk arbetserfarenhet med examensarbetsutveckling."
+        }
+      }
     },
     "skills": {
       "title": "Färdigheter",
