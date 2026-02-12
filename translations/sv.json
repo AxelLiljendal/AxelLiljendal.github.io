@@ -122,7 +122,19 @@
     },
     "projects": {
       "title": "Projekt",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "viewProject": "Visa projekt",
+      "project1": {
+        "title": "Budget Tracker",
+        "description": "En Java Spring Boot-applikation för att spåra personlig ekonomi genom att hantera inkomster och utgifter med strukturerade budgetkategorier."
+      },
+      "project2": {
+        "title": "Plantswap",
+        "description": "En Spring Boot-marknadsplatsapplikation som gör det möjligt för användare att köpa, sälja och byta växter med andra entusiaster i en community-driven plattform."
+      },
+      "project3": {
+        "title": "Homi",
+        "description": "En fullstack Airbnb-klon byggd i samarbete med ett team på 3 utvecklare. Innehåller fastighetslistor, användarautentisering och bokningssystem med separata backend- och frontend-repon."
+      }
     }
   },
   "aria": {

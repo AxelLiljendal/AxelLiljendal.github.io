@@ -122,7 +122,19 @@
     },
     "projects": {
       "title": "Projects",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "viewProject": "View Project",
+      "project1": {
+        "title": "Budget Tracker",
+        "description": "A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories."
+      },
+      "project2": {
+        "title": "Plantswap",
+        "description": "A Spring Boot marketplace application enabling users to buy, sell, and trade plants with other enthusiasts in a community-driven platform."
+      },
+      "project3": {
+        "title": "Homi",
+        "description": "A collaborative full-stack Airbnb clone built with a team of 3 developers. Features property listings, user authentication, and booking system with separate backend and frontend repositories."
+      }
     }
   },
   "aria": {
