@@ -1,4 +1,5 @@
 /* Base CSS Variables - Default Theme Light Mode */
+html,
 :root {
   --bg-gradient-start: #e0e7ff;
   --bg-gradient-mid: #f9fafb;
@@ -30,7 +31,8 @@
 }
 
 /* Default Theme Dark Mode */
-.dark-mode {
+html.dark-mode,
+html.dark-mode:root {
   --bg-gradient-start: #0f1729;
   --bg-gradient-mid: #1a202c;
   --bg-gradient-end: #0f1729;
@@ -56,7 +58,7 @@
 }
 
 /* Theme: Ocean Blue */
-[data-theme="ocean"] {
+html[data-theme="ocean"] {
   --bg-gradient-start: #dbeafe;
   --bg-gradient-mid: #f0f9ff;
   --bg-gradient-end: #bfdbfe;
@@ -76,7 +78,7 @@
   --h2-icon-bg: #0369a1;
 }
 
-[data-theme="ocean"].dark-mode {
+html[data-theme="ocean"].dark-mode {
   --bg-gradient-start: #0c1929;
   --bg-gradient-mid: #082f49;
   --bg-gradient-end: #0c1929;
@@ -94,7 +96,7 @@
 }
 
 /* Theme: Forest Green */
-[data-theme="forest"] {
+html[data-theme="forest"] {
   --bg-gradient-start: #d1fae5;
   --bg-gradient-mid: #f0fdf4;
   --bg-gradient-end: #a7f3d0;
@@ -114,7 +116,7 @@
   --h2-icon-bg: #047857;
 }
 
-[data-theme="forest"].dark-mode {
+html[data-theme="forest"].dark-mode {
   --bg-gradient-start: #022c22;
   --bg-gradient-mid: #064e3b;
   --bg-gradient-end: #022c22;
@@ -132,7 +134,7 @@
 }
 
 /* Theme: Sunset Orange */
-[data-theme="sunset"] {
+html[data-theme="sunset"] {
   --bg-gradient-start: #fed7aa;
   --bg-gradient-mid: #fff7ed;
   --bg-gradient-end: #fecaca;
@@ -152,7 +154,7 @@
   --h2-icon-bg: #c2410c;
 }
 
-[data-theme="sunset"].dark-mode {
+html[data-theme="sunset"].dark-mode {
   --bg-gradient-start: #431407;
   --bg-gradient-mid: #7c2d12;
   --bg-gradient-end: #431407;
@@ -170,7 +172,7 @@
 }
 
 /* Theme: Royal Purple */
-[data-theme="royal"] {
+html[data-theme="royal"] {
   --bg-gradient-start: #e9d5ff;
   --bg-gradient-mid: #faf5ff;
   --bg-gradient-end: #ddd6fe;
@@ -190,7 +192,7 @@
   --h2-icon-bg: #6d28d9;
 }
 
-[data-theme="royal"].dark-mode {
+html[data-theme="royal"].dark-mode {
   --bg-gradient-start: #2e1065;
   --bg-gradient-mid: #4c1d95;
   --bg-gradient-end: #2e1065;
@@ -208,7 +210,7 @@
 }
 
 /* Theme: Cherry Blossom */
-[data-theme="cherry"] {
+html[data-theme="cherry"] {
   --bg-gradient-start: #fce7f3;
   --bg-gradient-mid: #fdf2f8;
   --bg-gradient-end: #fbcfe8;
@@ -228,7 +230,7 @@
   --h2-icon-bg: #be185d;
 }
 
-[data-theme="cherry"].dark-mode {
+html[data-theme="cherry"].dark-mode {
   --bg-gradient-start: #500724;
   --bg-gradient-mid: #831843;
   --bg-gradient-end: #500724;
@@ -246,7 +248,7 @@
 }
 
 /* Theme: Midnight Blue */
-[data-theme="midnight"] {
+html[data-theme="midnight"] {
   --bg-gradient-start: #dbeafe;
   --bg-gradient-mid: #eff6ff;
   --bg-gradient-end: #bfdbfe;
@@ -266,7 +268,7 @@
   --h2-icon-bg: #1e3a8a;
 }
 
-[data-theme="midnight"].dark-mode {
+html[data-theme="midnight"].dark-mode {
   --bg-gradient-start: #0c1a3a;
   --bg-gradient-mid: #1e3a8a;
   --bg-gradient-end: #0c1a3a;
@@ -284,7 +286,7 @@
 }
 
 /* Theme: Slate Gray */
-[data-theme="slate"] {
+html[data-theme="slate"] {
   --bg-gradient-start: #e2e8f0;
   --bg-gradient-mid: #f8fafc;
   --bg-gradient-end: #cbd5e1;
@@ -304,7 +306,7 @@
   --h2-icon-bg: #334155;
 }
 
-[data-theme="slate"].dark-mode {
+html[data-theme="slate"].dark-mode {
   --bg-gradient-start: #0f172a;
   --bg-gradient-mid: #1e293b;
   --bg-gradient-end: #0f172a;
@@ -322,7 +324,7 @@
 }
 
 /* Theme: Amber Gold */
-[data-theme="amber"] {
+html[data-theme="amber"] {
   --bg-gradient-start: #fef3c7;
   --bg-gradient-mid: #fffbeb;
   --bg-gradient-end: #fde68a;
@@ -342,7 +344,7 @@
   --h2-icon-bg: #b45309;
 }
 
-[data-theme="amber"].dark-mode {
+html[data-theme="amber"].dark-mode {
   --bg-gradient-start: #451a03;
   --bg-gradient-mid: #78350f;
   --bg-gradient-end: #451a03;
@@ -360,7 +362,7 @@
 }
 
 /* Theme: Crimson Red */
-[data-theme="crimson"] {
+html[data-theme="crimson"] {
   --bg-gradient-start: #fee2e2;
   --bg-gradient-mid: #fef2f2;
   --bg-gradient-end: #fecaca;
@@ -380,7 +382,7 @@
   --h2-icon-bg: #b91c1c;
 }
 
-[data-theme="crimson"].dark-mode {
+html[data-theme="crimson"].dark-mode {
   --bg-gradient-start: #450a0a;
   --bg-gradient-mid: #7f1d1d;
   --bg-gradient-end: #450a0a;
@@ -427,8 +429,11 @@ body::before {
     radial-gradient(circle at 80% 30%, var(--overlay-4) 0, transparent 24%),
     radial-gradient(circle at 40% 75%, var(--overlay-5) 0, transparent 22%);
   animation: bg-pulse-1 5s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
-  will-change: opacity;
-  transform: translateZ(0);
+  transition: opacity 0.3s ease;
+}
+
+html.dark-mode body::before {
+  opacity: 0.5;
 }
 
 body::after {
@@ -442,8 +447,11 @@ body::after {
     radial-gradient(circle at 85% 15%, var(--overlay-2) 0, transparent 16%),
     radial-gradient(circle at 55% 60%, var(--overlay-3) 0, transparent 14%);
   animation: bg-pulse-2 7s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
-  will-change: opacity;
-  transform: translateZ(0);
+  transition: opacity 0.3s ease;
+}
+
+html.dark-mode body::after {
+  opacity: 0.5;
 }
 
 @keyframes bg-pulse-1 {
@@ -484,7 +492,7 @@ header {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dark-mode header {
+html.dark-mode header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
@@ -1382,7 +1390,7 @@ section {
 }
 
 /* Dark mode adjustments */
-.dark-mode .badge-item {
+html.dark-mode .badge-item {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1863,25 +1871,20 @@ h2:hover .h2-icon {
 }
 
 /* Dark Mode Enhancements */
-.dark-mode {
+html.dark-mode {
   --header-shadow: rgba(0, 0, 0, 0.5);
   --contact-btn-bg: #1f2937;
   --contact-btn-hover: #374151;
 }
 
-body.dark-mode::before,
-body.dark-mode::after {
-  opacity: 0.5;
-}
-
-.dark-mode .contact-buttons button {
+html.dark-mode .contact-buttons button {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
-.dark-mode .contact-buttons button:hover {
+html.dark-mode .contact-buttons button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.dark-mode .left-column {
+html.dark-mode .left-column {
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }

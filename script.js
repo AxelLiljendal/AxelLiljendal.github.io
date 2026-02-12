@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const selectedTheme = option.getAttribute('data-theme');
       if (selectedTheme !== currentTheme) {
         currentTheme = selectedTheme;
-        const isDark = document.body.classList.contains('dark-mode');
+        const isDark = document.documentElement.classList.contains('dark-mode');
         applyTheme(currentTheme, isDark);
         updateThemeCheckmarks();
         localStorage.setItem('selectedTheme', currentTheme);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   toggleBtn.addEventListener('click', () => {
-    const isDark = !document.body.classList.contains('dark-mode');
+    const isDark = !document.documentElement.classList.contains('dark-mode');
     applyTheme(currentTheme, isDark);
     localStorage.setItem('darkMode', isDark);
   });
@@ -169,24 +169,26 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function applyTheme(theme, darkMode) {
-    document.body.classList.remove('dark-mode');
-    document.body.removeAttribute('data-theme');
+    const html = document.documentElement;
     
+    // Remove dark mode class first
+    html.classList.remove('dark-mode');
+    html.removeAttribute('data-theme');
+    
+    // Apply theme
     if (theme !== 'default') {
-      document.body.setAttribute('data-theme', theme);
+      html.setAttribute('data-theme', theme);
     }
     
+    // Apply dark mode
     if (darkMode) {
-      document.body.classList.add('dark-mode');
+      html.classList.add('dark-mode');
     }
 
-    // Force repaint on mobile devices
-    requestAnimationFrame(() => {
-      void document.body.offsetHeight;
-    });
-
+    // Update button icon
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
 
+    // Update aria label
     const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
     const translation = i18n.getNestedTranslation(ariaKey);
     if (translation) {
