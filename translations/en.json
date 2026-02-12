@@ -36,7 +36,22 @@
     },
     "education": {
       "title": "Education",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "degree": "Higher Vocational Education (YH) – Fullstack Developer",
+      "institution": "Teknikhögskolan",
+      "duration": "2 years",
+      "description": "Comprehensive fullstack development program with emphasis on Java backend and modern frontend development.",
+      "coreAreasTitle": "Core areas:",
+      "coreAreas": {
+        "java": "Java (Spring Boot), REST API development",
+        "react": "React and modern JavaScript (ES6+)",
+        "databases": "Relational databases and SQL",
+        "design": "System design and object-oriented analysis & design (OOAD)",
+        "devops": "DevOps & DevSecOps principles",
+        "cicd": "CI/CD pipelines and version control (Git, structured workflows)",
+        "agile": "Agile methodologies and collaborative teamwork",
+        "security": "Application security fundamentals"
+      },
+      "focus": "Focus on building scalable, secure, and maintainable systems aligned with industry practices."
     },
     "experience": {
       "title": "Experience",

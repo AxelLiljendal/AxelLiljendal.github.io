@@ -36,7 +36,22 @@
     },
     "education": {
       "title": "Utbildning",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+      "degree": "Yrkeshögskola (YH) – Fullstack-utvecklare",
+      "institution": "Teknikhögskolan",
+      "duration": "2 år",
+      "description": "Heltäckande fullstack-utvecklingsprogram med fokus på Java backend och modern frontend-utveckling.",
+      "coreAreasTitle": "Kärnområden:",
+      "coreAreas": {
+        "java": "Java (Spring Boot), REST API-utveckling",
+        "react": "React och modern JavaScript (ES6+)",
+        "databases": "Relationsdatabaser och SQL",
+        "design": "Systemdesign och objektorienterad analys & design (OOAD)",
+        "devops": "DevOps & DevSecOps-principer",
+        "cicd": "CI/CD-pipelines och versionshantering (Git, strukturerade arbetsflöden)",
+        "agile": "Agila metoder och samarbete i team",
+        "security": "Grundläggande applikationssäkerhet"
+      },
+      "focus": "Fokus på att bygga skalbara, säkra och underhållbara system i linje med branschpraxis."
     },
     "experience": {
       "title": "Erfarenhet",
