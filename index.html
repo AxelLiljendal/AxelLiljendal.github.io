@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,38 +13,41 @@
     </div>
     <div class="header-middle" id="header-middle">
       <nav>
-        <a href="#professional-summary">Professional Summary</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#interests">Interests</a>
-        <a href="#projects">Projects</a>
+        <a href="#professional-summary" data-i18n="nav.professionalSummary">Professional Summary</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#interests" data-i18n="nav.interests">Interests</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
       </nav>
     </div>
     <div class="header-right">
-      <button id="theme-toggle" aria-label="Toggle Dark/Light Theme">
+      <button id="lang-toggle" aria-label="Change language" title="Change language">
+        🌐
+      </button>
+      <button id="theme-toggle" aria-label="Toggle Dark/Light Theme" data-i18n-aria="theme.toggle">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/></svg>
       </button>
-      <select id="theme-selector" aria-label="Select Theme">
-        <option value="default">Default theme</option>
-        <option value="ocean">Ocean Blue</option>
-        <option value="forest">Forest Green</option>
-        <option value="sunset">Sunset Orange</option>
-        <option value="royal">Royal Purple</option>
-        <option value="cherry">Cherry Blossom</option>
-        <option value="midnight">Midnight Blue</option>
-        <option value="slate">Slate Gray</option>
-        <option value="amber">Amber Gold</option>
-        <option value="crimson">Crimson Red</option>
+      <select id="theme-selector" aria-label="Select Theme" data-i18n-aria="theme.selectTheme">
+        <option value="default" data-i18n="theme.default">Default theme</option>
+        <option value="ocean" data-i18n="theme.ocean">Ocean Blue</option>
+        <option value="forest" data-i18n="theme.forest">Forest Green</option>
+        <option value="sunset" data-i18n="theme.sunset">Sunset Orange</option>
+        <option value="royal" data-i18n="theme.royal">Royal Purple</option>
+        <option value="cherry" data-i18n="theme.cherry">Cherry Blossom</option>
+        <option value="midnight" data-i18n="theme.midnight">Midnight Blue</option>
+        <option value="slate" data-i18n="theme.slate">Slate Gray</option>
+        <option value="amber" data-i18n="theme.amber">Amber Gold</option>
+        <option value="crimson" data-i18n="theme.crimson">Crimson Red</option>
       </select>
-      <button id="header-dropdown" class="header-dropdown" aria-label="Open navigation menu" style="display:none">☰</button>
+      <button id="header-dropdown" class="header-dropdown" aria-label="Open navigation menu" data-i18n-aria="aria.openMenu" style="display:none">☰</button>
     </div>
   </header>
   <main class="two-column">
     <div class="left-column">
       <img src="https://avatars.githubusercontent.com/u/164730385?v=4" alt="Profile Picture" class="profile-pic">
       <h1>Axel Liljendal</h1>
-      <p class="title">Software Developer</p>
+      <p class="title" data-i18n="title">Software Developer</p>
       <section id="resume-cv">
         <button class="download-cv-btn" onclick="window.open('AxelLiljendal_CV.pdf', '_blank')">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -53,7 +56,7 @@
             <path d="M12 14v-4" stroke="white" stroke-width="2" stroke-linecap="round"/>
             <path d="M9 13l3 3 3-3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Download CV
+          <span data-i18n="buttons.downloadCV">Download CV</span>
         </button>
       </section>
       <section id="contact">
@@ -61,6 +64,7 @@
           <button 
             onclick="window.location.href='mailto:liljendalaxel@gmail.com'"
             title="mailto:liljendalaxel@gmail.com"
+            aria-label="Email" data-i18n-aria="aria.email"
           >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
             <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -69,7 +73,7 @@
           <button
             onclick="window.open('https://github.com/AxelLiljendal', '_blank')"
             title="https://github.com/AxelLiljendal"
-            aria-label="GitHub"
+            aria-label="GitHub" data-i18n-aria="aria.github"
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .268.18.579.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
@@ -78,7 +82,7 @@
           <button
             onclick="window.open('https://www.linkedin.com/in/axelliljendal/', '_blank')"
             title="https://www.linkedin.com/in/axelliljendal/"
-            aria-label="LinkedIn"
+            aria-label="LinkedIn" data-i18n-aria="aria.linkedin"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path fill="currentColor" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
@@ -89,14 +93,14 @@
     </div>
     <div class="right-column">
       <section class="professional-summary" id="professional-summary">
-        <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#1976d2"/><path d="M12 8v4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="#fff"/></svg></span>Professional Summary</h2>
-        <p>
+        <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#1976d2"/><path d="M12 8v4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="#fff"/></svg></span><span data-i18n="sections.professionalSummary.title">Professional Summary</span></h2>
+        <p data-i18n="sections.professionalSummary.content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
         </p>
       </section>
       <section id="education" class="education">
-      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="13" rx="2" fill="#1976d2"/><rect x="7" y="2" width="10" height="5" rx="1" fill="#1976d2"/><rect x="9" y="9" width="6" height="7" rx="1" fill="#fff"/></svg></span>Education</h2>
-      <p>
+      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="13" rx="2" fill="#1976d2"/><rect x="7" y="2" width="10" height="5" rx="1" fill="#1976d2"/><rect x="9" y="9" width="6" height="7" rx="1" fill="#fff"/></svg></span><span data-i18n="sections.education.title">Education</span></h2>
+      <p data-i18n="sections.education.content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
       </p>
     </section>
@@ -105,29 +109,29 @@
 
   <section class="content-sections">
     <section id="experience" class="experience">
-      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 6-9 6-9-6 9-6zm0 13v5" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="10" height="5" rx="2" fill="#1976d2"/></svg></span>Experience</h2>
-      <p>
+      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 6-9 6-9-6 9-6zm0 13v5" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="10" height="5" rx="2" fill="#1976d2"/></svg></span><span data-i18n="sections.experience.title">Experience</span></h2>
+      <p data-i18n="sections.experience.content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
       </p>
     </section>
 
     <section id="skills" class="skills">
-      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 6-9 6-9-6 9-6zm0 13v5" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="10" height="5" rx="2" fill="#1976d2"/></svg></span>Skills</h2>
-      <p>
+      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 6-9 6-9-6 9-6zm0 13v5" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="10" height="5" rx="2" fill="#1976d2"/></svg></span><span data-i18n="sections.skills.title">Skills</span></h2>
+      <p data-i18n="sections.skills.content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
       </p>
     </section>
 
     <section id="interests" class="interests">
-      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#1976d2"/></svg></span>Interests</h2>
-      <p>
+      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#1976d2"/></svg></span><span data-i18n="sections.interests.title">Interests</span></h2>
+      <p data-i18n="sections.interests.content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
       </p>
     </section>
 
     <section id="projects" class="projects">
-      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="#1976d2"/><rect x="7" y="2" width="10" height="5" rx="1" fill="#1976d2"/><rect x="9" y="9" width="6" height="7" rx="1" fill="#fff"/></svg></span>Projects</h2>
-      <p>
+      <h2><span class="h2-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="#1976d2"/><rect x="7" y="2" width="10" height="5" rx="1" fill="#1976d2"/><rect x="9" y="9" width="6" height="7" rx="1" fill="#fff"/></svg></span><span data-i18n="sections.projects.title">Projects</span></h2>
+      <p data-i18n="sections.projects.content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
       </p>
       <ul class="projects">

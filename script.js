@@ -1,3 +1,69 @@
+// Translation system
+const i18n = {
+  currentLanguage: 'sv', // Default language is Swedish
+  translations: {},
+
+  async init() {
+    const savedLang = localStorage.getItem('language') || 'sv';
+    await this.loadLanguage(savedLang);
+    this.setupLanguageToggle();
+  },
+
+  async loadLanguage(lang) {
+    try {
+      const response = await fetch(`translations/${lang}.json`);
+      if (!response.ok) throw new Error(`Failed to load ${lang}.json`);
+      this.translations = await response.json();
+      this.currentLanguage = lang;
+      this.applyTranslations();
+      document.documentElement.lang = lang;
+      localStorage.setItem('language', lang);
+    } catch (error) {
+      console.error('Error loading translations:', error);
+    }
+  },
+
+  applyTranslations() {
+    // Translate elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      const translation = this.getNestedTranslation(key);
+      if (translation) {
+        element.textContent = translation;
+      }
+    });
+
+    // Translate aria-label attributes
+    document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+      const key = element.getAttribute('data-i18n-aria');
+      const translation = this.getNestedTranslation(key);
+      if (translation) {
+        element.setAttribute('aria-label', translation);
+      }
+    });
+  },
+
+  getNestedTranslation(key) {
+    return key.split('.').reduce((obj, k) => obj?.[k], this.translations);
+  },
+
+  setupLanguageToggle() {
+    const langToggle = document.getElementById('lang-toggle');
+    if (!langToggle) return;
+
+    langToggle.addEventListener('click', () => {
+      const newLang = this.currentLanguage === 'sv' ? 'en' : 'sv';
+      this.loadLanguage(newLang);
+    });
+  }
+};
+
+// Initialize translations
+document.addEventListener('DOMContentLoaded', () => {
+  i18n.init();
+});
+
+// Theme system
 document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.getElementById('theme-toggle');
   const themeSelector = document.getElementById('theme-selector');
@@ -41,7 +107,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
-    toggleBtn.setAttribute('aria-label', darkMode ? 'Switch to light mode' : 'Switch to dark mode');
+    
+    // Update aria-label with current translation
+    const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
+    const translation = i18n.getNestedTranslation(ariaKey);
+    if (translation) {
+      toggleBtn.setAttribute('aria-label', translation);
+    }
   }
 });
 

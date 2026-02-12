@@ -1,0 +1,63 @@
+{
+  "title": "Mjukvaruutvecklare",
+  "nav": {
+    "professionalSummary": "Professionell Sammanfattning",
+    "education": "Utbildning",
+    "experience": "Erfarenhet",
+    "skills": "Färdigheter",
+    "interests": "Intressen",
+    "projects": "Projekt"
+  },
+  "buttons": {
+    "downloadCV": "Ladda ner CV",
+    "goToTop": "Gå till toppen"
+  },
+  "theme": {
+    "toggle": "Växla ljus/mörkt tema",
+    "lightMode": "Växla till ljust läge",
+    "darkMode": "Växla till mörkt läge",
+    "selectTheme": "Välj tema",
+    "default": "Standardtema",
+    "ocean": "Ocean Blue",
+    "forest": "Forest Green",
+    "sunset": "Sunset Orange",
+    "royal": "Royal Purple",
+    "cherry": "Cherry Blossom",
+    "midnight": "Midnight Blue",
+    "slate": "Slate Gray",
+    "amber": "Amber Gold",
+    "crimson": "Crimson Red"
+  },
+  "sections": {
+    "professionalSummary": {
+      "title": "Professionell Sammanfattning",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    },
+    "education": {
+      "title": "Utbildning",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    },
+    "experience": {
+      "title": "Erfarenhet",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    },
+    "skills": {
+      "title": "Färdigheter",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    },
+    "interests": {
+      "title": "Intressen",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    },
+    "projects": {
+      "title": "Projekt",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
+    }
+  },
+  "aria": {
+    "openMenu": "Öppna navigeringsmeny",
+    "email": "E-post",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}
