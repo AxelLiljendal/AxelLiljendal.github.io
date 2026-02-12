@@ -46,21 +46,53 @@ const i18n = {
   },
 
   updateLanguageButton() {
-    const langToggle = document.getElementById('lang-toggle');
-    if (!langToggle) return;
+    const langOptions = document.querySelectorAll('.lang-option');
+    if (!langOptions.length) return;
 
-    const nextLang = this.currentLanguage === 'sv' ? 'EN' : 'SV';
-    langToggle.textContent = nextLang;
-    langToggle.setAttribute('title', `Switch to ${nextLang === 'EN' ? 'English' : 'Swedish'}`);
+    langOptions.forEach(option => {
+      const langCode = option.getAttribute('data-lang');
+      const checkmark = option.querySelector('.lang-check');
+      
+      if (langCode === this.currentLanguage) {
+        checkmark.style.visibility = 'visible';
+        option.classList.add('active');
+      } else {
+        checkmark.style.visibility = 'hidden';
+        option.classList.remove('active');
+      }
+    });
   },
 
   setupLanguageToggle() {
     const langToggle = document.getElementById('lang-toggle');
-    if (!langToggle) return;
+    const langDropdown = document.getElementById('lang-dropdown');
+    const langOptions = document.querySelectorAll('.lang-option');
+    
+    if (!langToggle || !langDropdown) return;
 
-    langToggle.addEventListener('click', () => {
-      const newLang = this.currentLanguage === 'sv' ? 'en' : 'sv';
-      this.loadLanguage(newLang);
+    // Toggle dropdown
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('show');
+    });
+
+    // Select language
+    langOptions.forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const selectedLang = option.getAttribute('data-lang');
+        if (selectedLang !== this.currentLanguage) {
+          this.loadLanguage(selectedLang);
+        }
+        langDropdown.classList.remove('show');
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+        langDropdown.classList.remove('show');
+      }
     });
   }
 };
