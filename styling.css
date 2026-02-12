@@ -427,6 +427,8 @@ body::before {
     radial-gradient(circle at 80% 30%, var(--overlay-4) 0, transparent 24%),
     radial-gradient(circle at 40% 75%, var(--overlay-5) 0, transparent 22%);
   animation: bg-pulse-1 5s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 
 body::after {
@@ -440,6 +442,8 @@ body::after {
     radial-gradient(circle at 85% 15%, var(--overlay-2) 0, transparent 16%),
     radial-gradient(circle at 55% 60%, var(--overlay-3) 0, transparent 14%);
   animation: bg-pulse-2 7s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 
 @keyframes bg-pulse-1 {

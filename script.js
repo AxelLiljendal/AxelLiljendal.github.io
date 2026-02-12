@@ -180,6 +180,11 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.classList.add('dark-mode');
     }
 
+    // Force repaint on mobile devices
+    requestAnimationFrame(() => {
+      void document.body.offsetHeight;
+    });
+
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
 
     const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
