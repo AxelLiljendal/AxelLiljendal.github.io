@@ -142,7 +142,7 @@
       },
       "project5": {
         "title": "Finance Tracker",
-        "description": "A comprehensive personal finance tracking application with full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
+        "description": "A comprehensive personal finance tracking application developed as a solo project, featuring full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
       },
       "project6": {
         "title": "Personality Miner",
