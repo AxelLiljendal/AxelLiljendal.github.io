@@ -1066,7 +1066,7 @@ h2 {
     padding: 0.75rem 1rem;
     font-size: 1rem;
     color: var(--text-color);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--border-color);
   }
 
   .header-middle.mobile-active nav a:hover,
@@ -1168,8 +1168,8 @@ h2 {
   --contact-btn-hover: #374151;
 }
 
-.dark-mode body::before,
-.dark-mode body::after {
+body.dark-mode::before,
+body.dark-mode::after {
   opacity: 0.5;
 }
 
