@@ -138,6 +138,10 @@
       "project4": {
         "title": "HealthcareSDLC",
         "description": "A collaborative healthcare booking application developed by a team of 4, emphasizing SDLC methodology, DevOps, and DevSecOps practices with automated CI/CD pipelines and code quality monitoring."
+      },
+      "project5": {
+        "title": "Finance Tracker",
+        "description": "A comprehensive personal finance tracking application with full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
       }
     }
   },
