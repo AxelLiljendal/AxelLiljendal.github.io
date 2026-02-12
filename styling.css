@@ -647,6 +647,7 @@ main.two-column {
 
 section {
   margin-bottom: 2rem;
+  scroll-margin-top: 100px;
 }
 
 .content-sections {
