@@ -1288,6 +1288,100 @@ section {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
+/* Clean Icon Badge Layout for Interests */
+.interest-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--header-bg);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.badge-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.badge-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--link-color) 0%, var(--link-hover) 100%);
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.badge-item:hover .badge-icon-wrapper {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.badge-icon-wrapper svg {
+  width: 35px;
+  height: 35px;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.badge-item h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.badge-item p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Unique gradient backgrounds for each badge icon */
+.badge-item:nth-child(1) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.badge-item:nth-child(2) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.badge-item:nth-child(3) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.badge-item:nth-child(4) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.badge-item:nth-child(5) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.badge-item:nth-child(6) .badge-icon-wrapper {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+/* Dark mode adjustments */
+.dark-mode .badge-item {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Buttons */
 button {
   background: linear-gradient(90deg, var(--button-bg-start) 0%, var(--button-bg-end) 100%);
@@ -1686,6 +1780,34 @@ h2:hover .h2-icon {
     font-size: 1.1rem;
   }
 
+  /* Interests mobile - badges */
+  .interest-badges {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .badge-item {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .badge-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .badge-icon-wrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .badge-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .badge-item p {
+    font-size: 0.9rem;
+  }
+
   /* Disable animations on mobile for performance */
   body::before,
   body::after {
@@ -1727,6 +1849,11 @@ h2:hover .h2-icon {
 
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .interest-badges {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
   }
 }
