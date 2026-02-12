@@ -528,8 +528,8 @@ header nav a:focus {
 }
 
 #theme-toggle {
-  background: var(--link-color);
-  border: 2px solid var(--link-color);
+  background: transparent;
+  border: none;
   font-size: 1.3rem;
   cursor: pointer;
   vertical-align: middle;
@@ -539,18 +539,26 @@ header nav a:focus {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: #ffffff;
-  border-radius: 8px;
+  padding: 8px;
+}
+
+#theme-toggle svg {
+  width: 28px;
+  height: 28px;
+  color: var(--text-color);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  transition: all 0.2s;
 }
 
 #theme-toggle:hover,
 #theme-toggle:focus {
-  background: var(--link-hover);
-  border-color: var(--link-hover);
-  color: #ffffff;
-  transform: scale(1.05);
+  transform: scale(1.15);
   outline: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#theme-toggle:hover svg,
+#theme-toggle:focus svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 #header-dropdown {
