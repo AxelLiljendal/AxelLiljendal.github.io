@@ -146,7 +146,7 @@
       },
       "project6": {
         "title": "Personality Miner",
-        "description": "Examensarbetet undersöker vilken metod – RAG (Retrieval-Augmented Generation), fine-tuning eller strukturerad prompting – som är mest effektiv för att styra en lokal Large Language Model (LLM) att hålla sig inom definierade etiska ramar vid psykologisk självreflektion."
+        "description": "Examensarbete i samarbete med en klasskamrat, undersöker vilken metod – RAG (Retrieval-Augmented Generation), fine-tuning eller strukturerad prompting – som är mest effektiv för att styra en lokal Large Language Model (LLM) att hålla sig inom definierade etiska ramar vid psykologisk självreflektion."
       }
     }
   },
