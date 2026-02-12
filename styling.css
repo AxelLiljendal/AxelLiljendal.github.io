@@ -430,6 +430,9 @@ body::before {
     radial-gradient(circle at 40% 75%, var(--overlay-5) 0, transparent 22%);
   animation: bg-pulse-1 5s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
   transition: opacity 0.3s ease;
+  will-change: opacity;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 html.dark-mode body::before {
@@ -448,6 +451,9 @@ body::after {
     radial-gradient(circle at 55% 60%, var(--overlay-3) 0, transparent 14%);
   animation: bg-pulse-2 7s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
   transition: opacity 0.3s ease;
+  will-change: opacity;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 html.dark-mode body::after {

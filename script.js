@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function applyTheme(theme, darkMode) {
     const html = document.documentElement;
+    const body = document.body;
     
     // Remove dark mode class first
     html.classList.remove('dark-mode');
@@ -184,6 +185,21 @@ document.addEventListener('DOMContentLoaded', function () {
     if (darkMode) {
       html.classList.add('dark-mode');
     }
+
+    // Aggressive mobile repaint strategy
+    // Force immediate style recalculation on multiple elements
+    void html.offsetHeight;
+    void body.offsetHeight;
+    window.getComputedStyle(body, '::before').getPropertyValue('opacity');
+    window.getComputedStyle(body, '::after').getPropertyValue('opacity');
+    
+    // Force repaint with requestAnimationFrame chain
+    requestAnimationFrame(() => {
+      body.style.transform = 'translateZ(0)';
+      requestAnimationFrame(() => {
+        body.style.transform = '';
+      });
+    });
 
     // Update button icon
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
