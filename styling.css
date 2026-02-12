@@ -991,25 +991,84 @@ h2 {
   align-items: center;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.3em;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px;
+  opacity: 0.3;
 }
 
 .h2-icon {
-  width: 2em;
-  height: 2em;
-  margin-right: 0.5em;
+  width: 2.2em;
+  height: 2.2em;
+  margin-right: 0.6em;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--h2-icon-bg);
-  border-radius: 50%;
-  transition: background 0.3s ease;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .h2-icon svg {
-  width: 1.2em;
-  height: 1.2em;
-  fill: #fff;
+  width: 1.3em;
+  height: 1.3em;
+  transition: transform 0.3s ease;
+}
+
+h2:hover .h2-icon svg {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Icon-specific colors */
+.summary-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.education-icon {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.3);
+}
+
+.experience-icon {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.skills-icon {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(67, 233, 123, 0.3);
+}
+
+.interests-icon {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(250, 112, 154, 0.3);
+}
+
+.projects-icon {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(48, 207, 208, 0.3);
+}
+
+h2:hover .h2-icon {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile Responsive Design (max-width: 600px) */
@@ -1127,6 +1186,16 @@ h2 {
 
   main.two-column {
     margin: 2.2rem auto 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .h2-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
   }
 
   /* Disable animations on mobile for performance */
