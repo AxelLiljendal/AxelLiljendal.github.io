@@ -104,31 +104,69 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.getElementById('theme-toggle');
   const themeSelector = document.getElementById('theme-selector');
+  const themeDropdown = document.getElementById('theme-dropdown');
+  const themeOptions = document.querySelectorAll('.theme-option');
   
-  if (!toggleBtn || !themeSelector) return;
+  if (!toggleBtn || !themeSelector || !themeDropdown) return;
   
   const sunSVG = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>`;
   const moonSVG = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/></svg>`;
 
-  const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+  let currentTheme = localStorage.getItem('selectedTheme') || 'default';
   const savedMode = localStorage.getItem('darkMode') === 'true';
   
-  applyTheme(savedTheme, savedMode);
-  themeSelector.value = savedTheme;
+  applyTheme(currentTheme, savedMode);
+  updateThemeCheckmarks();
 
-  themeSelector.addEventListener('change', () => {
-    const theme = themeSelector.value;
-    const isDark = document.body.classList.contains('dark-mode');
-    applyTheme(theme, isDark);
-    localStorage.setItem('selectedTheme', theme);
+  // Toggle theme dropdown
+  themeSelector.addEventListener('click', (e) => {
+    e.stopPropagation();
+    themeDropdown.classList.toggle('show');
+  });
+
+  // Select theme
+  themeOptions.forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const selectedTheme = option.getAttribute('data-theme');
+      if (selectedTheme !== currentTheme) {
+        currentTheme = selectedTheme;
+        const isDark = document.body.classList.contains('dark-mode');
+        applyTheme(currentTheme, isDark);
+        updateThemeCheckmarks();
+        localStorage.setItem('selectedTheme', currentTheme);
+      }
+      themeDropdown.classList.remove('show');
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!themeSelector.contains(e.target) && !themeDropdown.contains(e.target)) {
+      themeDropdown.classList.remove('show');
+    }
   });
 
   toggleBtn.addEventListener('click', () => {
     const isDark = !document.body.classList.contains('dark-mode');
-    const theme = themeSelector.value;
-    applyTheme(theme, isDark);
+    applyTheme(currentTheme, isDark);
     localStorage.setItem('darkMode', isDark);
   });
+
+  function updateThemeCheckmarks() {
+    themeOptions.forEach(option => {
+      const themeValue = option.getAttribute('data-theme');
+      const checkmark = option.querySelector('.theme-check');
+      
+      if (themeValue === currentTheme) {
+        checkmark.style.visibility = 'visible';
+        option.classList.add('active');
+      } else {
+        checkmark.style.visibility = 'hidden';
+        option.classList.remove('active');
+      }
+    });
+  }
 
   function applyTheme(theme, darkMode) {
     document.body.classList.remove('dark-mode');
