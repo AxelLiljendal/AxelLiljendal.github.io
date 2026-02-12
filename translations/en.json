@@ -123,6 +123,7 @@
     "projects": {
       "title": "Projects",
       "viewProject": "View Project",
+      "inProgress": "In Progress",
       "project1": {
         "title": "Budget Tracker",
         "description": "A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories."
@@ -142,6 +143,10 @@
       "project5": {
         "title": "Finance Tracker",
         "description": "A comprehensive personal finance tracking application with full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
+      },
+      "project6": {
+        "title": "Personality Miner",
+        "description": "Thesis project investigating which method – RAG (Retrieval-Augmented Generation), fine-tuning, or structured prompting – is most effective for guiding a local Large Language Model (LLM) to stay within defined ethical boundaries during psychological self-reflection."
       }
     }
   },

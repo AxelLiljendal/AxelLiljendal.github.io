@@ -123,6 +123,7 @@
     "projects": {
       "title": "Projekt",
       "viewProject": "Visa projekt",
+      "inProgress": "Pågående",
       "project1": {
         "title": "Budget Tracker",
         "description": "En Java Spring Boot-applikation för att spåra personlig ekonomi genom att hantera inkomster och utgifter med strukturerade budgetkategorier."
@@ -142,6 +143,10 @@
       "project5": {
         "title": "Finance Tracker",
         "description": "En omfattande personlig ekonomispårningsapplikation med fullständig CI/CD-implementering, automatiserad testning och kodkvalitetskontroller. Hanterar utgifter, inkomster, budgetar och finansiella mål."
+      },
+      "project6": {
+        "title": "Personality Miner",
+        "description": "Examensarbetet undersöker vilken metod – RAG (Retrieval-Augmented Generation), fine-tuning eller strukturerad prompting – som är mest effektiv för att styra en lokal Large Language Model (LLM) att hålla sig inom definierade etiska ramar vid psykologisk självreflektion."
       }
     }
   },

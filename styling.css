@@ -1278,12 +1278,29 @@ section {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
   cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
 }
 
 .project-image {
@@ -1334,9 +1351,21 @@ section {
   transition: all 0.3s ease;
 }
 
+.project-link.disabled {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  cursor: default;
+  opacity: 0.9;
+}
+
 .project-link:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.project-link.disabled:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .project-content {
