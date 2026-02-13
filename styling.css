@@ -1038,6 +1038,8 @@ section {
   color: var(--link-color);
   padding-top: 0.25rem;
   letter-spacing: 0.02em;
+  word-spacing: 100vw;
+  line-height: 1.4;
 }
 
 .timeline-dot {

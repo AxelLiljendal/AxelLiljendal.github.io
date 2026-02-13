@@ -57,55 +57,55 @@
       "title": "Experience",
       "timeline": {
         "item1": {
-          "date": "Mar 2024 - Jul 2024",
+          "date": "March 2024 - July 2024",
           "title": "Programming 1 (High School Course)",
           "location": "High School",
           "description": "Introduction to programming fundamentals and computational thinking."
         },
         "item2": {
-          "date": "Aug 2024 - Oct 2024",
+          "date": "August 2024 - October 2024",
           "title": "Java Programming in Context",
           "location": "Teknikhögskolan",
           "description": "Comprehensive Java fundamentals, OOP concepts, and building structured applications."
         },
         "item3": {
-          "date": "Oct 2024 - Jan 2025",
+          "date": "October 2024 - January 2025",
           "title": "Databases in Context",
           "location": "Teknikhögskolan",
           "description": "Relational database design, SQL, data modeling, and database optimization techniques."
         },
         "item4": {
-          "date": "Jan 2025 - Mar 2025",
+          "date": "January 2025 - March 2025",
           "title": "Backend in Context",
           "location": "Teknikhögskolan",
           "description": "Advanced backend development with Spring Boot, RESTful APIs, and server-side architecture."
         },
         "item5": {
-          "date": "Mar 2025 - May 2025",
+          "date": "March 2025 - May 2025",
           "title": "Frontend in Context",
           "location": "Teknikhögskolan",
           "description": "Modern frontend development with React, component architecture, and UI/UX principles."
         },
         "item6": {
-          "date": "Aug 2025 - Sep 2025",
+          "date": "August 2025 - September 2025",
           "title": "Object-Oriented Analysis & Design",
           "location": "Teknikhögskolan",
           "description": "System architecture, design patterns, and OOAD principles for scalable applications."
         },
         "item7": {
-          "date": "Sep 2025 - Dec 2025",
+          "date": "September 2025 - December 2025",
           "title": "Learning at Work 1",
           "location": "Teknikhögskolan",
           "description": "Practical workplace training applying acquired development skills in real-world scenarios."
         },
         "item8": {
-          "date": "Dec 2025 - Jan 2026",
+          "date": "December 2025 - January 2026",
           "title": "Producing and Delivering Software",
           "location": "Teknikhögskolan",
           "description": "Complete software lifecycle from production to deployment and delivery."
         },
         "item9": {
-          "date": "Feb 2026 - May 2026",
+          "date": "February 2026 - May 2026",
           "title": "Learning at Work 2 / Thesis Project",
           "location": "Teknikhögskolan • Current",
           "description": "Final phase combining practical work experience with thesis project development."
