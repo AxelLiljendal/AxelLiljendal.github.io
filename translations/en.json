@@ -124,6 +124,10 @@
       "title": "Projects",
       "viewProject": "View Project",
       "inProgress": "In Progress",
+      "commercial": "Commercial Project",
+      "enterprise": "Enterprise Application",
+      "viewLiveSite": "View Live Site",
+      "privateProject": "Private Project",
       "project1": {
         "title": "Budget Tracker",
         "description": "A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories."
@@ -147,6 +151,14 @@
       "project6": {
         "title": "Personality Miner",
         "description": "Collaborative thesis project with one classmate, investigating which method – RAG (Retrieval-Augmented Generation), fine-tuning, or structured prompting – is most effective for guiding a local Large Language Model (LLM) to stay within defined ethical boundaries during psychological self-reflection."
+      },
+      "project7": {
+        "title": "Schackeriet",
+        "description": "E-commerce platform for chess products and community connecting Swedish chess enthusiasts with clubs and products. Developed frontend with TypeScript, integrated Shopify for product management and checkout, and deployed on Vercel."
+      },
+      "project8": {
+        "title": "Claims",
+        "description": "Enterprise application for handling warranty cases and business claims. Developed Java backend with Supabase and MongoDB integration, React frontend, comprehensive testing suite, and ERP system integration for seamless business workflows."
       }
     }
   },

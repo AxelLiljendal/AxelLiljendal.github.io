@@ -124,6 +124,10 @@
       "title": "Projekt",
       "viewProject": "Visa projekt",
       "inProgress": "Pågående",
+      "commercial": "Kommersiellt projekt",
+      "enterprise": "Entreprenörapplikation",
+      "viewLiveSite": "Visa live-sajt",
+      "privateProject": "Privat projekt",
       "project1": {
         "title": "Budget Tracker",
         "description": "En Java Spring Boot-applikation för att spåra personlig ekonomi genom att hantera inkomster och utgifter med strukturerade budgetkategorier."
@@ -147,6 +151,14 @@
       "project6": {
         "title": "Personality Miner",
         "description": "Examensarbete i samarbete med en klasskamrat, undersöker vilken metod – RAG (Retrieval-Augmented Generation), fine-tuning eller strukturerad prompting – som är mest effektiv för att styra en lokal Large Language Model (LLM) att hålla sig inom definierade etiska ramar vid psykologisk självreflektion."
+      },
+      "project7": {
+        "title": "Schackeriet",
+        "description": "E-handelsplattform för schackprodukter och gemenskap som kopplar samman svenska schackentusiaster med klubbar och produkter. Utvecklade frontend med TypeScript, integrerade Shopify för produkthantering och checkout, och distribuerade på Vercel."
+      },
+      "project8": {
+        "title": "Claims",
+        "description": "Entreprenörapplikation för hantering av garantifall och affärsreklamationer. Utvecklade Java backend med Supabase och MongoDB-integrering, React frontend, omfattande testsvit och ERP-systemintegrering för sömlösa affärsarbetsflöden."
       }
     }
   },

@@ -1306,6 +1306,11 @@ section {
   box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
 }
 
+.project-status.commercial {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
 .project-image {
   position: relative;
   width: 100%;
