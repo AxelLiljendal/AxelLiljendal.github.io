@@ -57,58 +57,58 @@
       "title": "Experience",
       "timeline": {
         "item1": {
-          "date": "March 2024 - July 2024",
+          "date": "July 2024 - March 2024",
           "title": "Programming 1 (High School Course)",
           "location": "High School",
           "description": "Introduction to programming fundamentals and computational thinking."
         },
         "item2": {
-          "date": "August 2024 - October 2024",
+          "date": "October 2024 - August 2024",
           "title": "Java Programming in Context",
           "location": "Teknikhögskolan",
-          "description": "Comprehensive Java fundamentals, OOP concepts, and building structured applications."
+          "description": "Comprehensive Java fundamentals including object-oriented programming principles, design patterns, exception handling, collections framework, and building structured, maintainable applications. Focus on writing clean, testable code and applying best practices for enterprise development."
         },
         "item3": {
-          "date": "October 2024 - January 2025",
+          "date": "January 2025 - October 2024",
           "title": "Databases in Context",
           "location": "Teknikhögskolan",
-          "description": "Relational database design, SQL, data modeling, and database optimization techniques."
+          "description": "Relational database design principles, SQL query optimization, data modeling (ER diagrams, normalization), transaction management, indexing strategies, and performance tuning. Hands-on experience with database management systems and implementing secure, efficient data access layers."
         },
         "item4": {
-          "date": "January 2025 - March 2025",
+          "date": "March 2025 - January 2025",
           "title": "Backend in Context",
           "location": "Teknikhögskolan",
-          "description": "Advanced backend development with Spring Boot, RESTful APIs, and server-side architecture."
+          "description": "Advanced backend development using Spring Boot framework, building RESTful APIs with proper HTTP methods and status codes, implementing authentication and authorization (JWT, OAuth), server-side architecture patterns (MVC, layered architecture), dependency injection, and integrating with databases and external services."
         },
         "item5": {
-          "date": "March 2025 - May 2025",
+          "date": "May 2025 - March 2025",
           "title": "Frontend in Context",
           "location": "Teknikhögskolan",
-          "description": "Modern frontend development with React, component architecture, and UI/UX principles."
+          "description": "Modern frontend development with React including hooks, context API, state management, component lifecycle, routing, form handling, API integration, responsive design principles, CSS frameworks, and UI/UX best practices. Focus on building accessible, performant single-page applications."
         },
         "item6": {
-          "date": "August 2025 - September 2025",
+          "date": "September 2025 - August 2025",
           "title": "Object-Oriented Analysis & Design",
           "location": "Teknikhögskolan",
-          "description": "System architecture, design patterns, and OOAD principles for scalable applications."
+          "description": "System architecture and design using UML diagrams (class, sequence, use case), SOLID principles, design patterns (Factory, Singleton, Observer, Strategy), domain-driven design concepts, and OOAD methodologies for building scalable, maintainable software systems. Emphasis on translating business requirements into technical solutions."
         },
         "item7": {
-          "date": "September 2025 - December 2025",
+          "date": "December 2025 - September 2025",
           "title": "Learning at Work 1",
           "location": "Teknikhögskolan",
-          "description": "Practical workplace training applying acquired development skills in real-world scenarios."
+          "description": "Developed an online e-shop for chess products and community platform to connect the Swedish chess scene with clubs and products. Worked primarily with frontend technologies including TypeScript, HTML, CSS, deployed on Vercel. Responsibilities included bug fixes, implementing new features, and integrating Shopify e-commerce functionality for product management and checkout."
         },
         "item8": {
-          "date": "December 2025 - January 2026",
+          "date": "January 2026 - December 2025",
           "title": "Producing and Delivering Software",
           "location": "Teknikhögskolan",
-          "description": "Complete software lifecycle from production to deployment and delivery."
+          "description": "Complete software development lifecycle from planning and production to deployment and delivery. Covered project management methodologies, CI/CD pipeline setup, containerization (Docker), cloud deployment, monitoring and logging, documentation practices, and delivering production-ready software with focus on quality assurance and maintainability."
         },
         "item9": {
-          "date": "February 2026 - May 2026",
+          "date": "May 2026 - February 2026",
           "title": "Learning at Work 2 / Thesis Project",
           "location": "Teknikhögskolan • Current",
-          "description": "Final phase combining practical work experience with thesis project development."
+          "description": "Working on a claims application to handle warranty cases for businesses using Java backend with Supabase and MongoDB databases, React frontend with HTML/CSS. Responsibilities include writing unit and integration tests, code refactoring, bug fixes, implementing new features, and integrating with ERP systems. Simultaneously developing thesis project 'Personality Miner' with one classmate, investigating optimal methods (RAG, fine-tuning, or structured prompting) for guiding local LLMs within ethical boundaries."
         }
       }
     },

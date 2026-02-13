@@ -57,58 +57,58 @@
       "title": "Erfarenhet",
       "timeline": {
         "item1": {
-          "date": "Mars 2024 - Juli 2024",
+          "date": "Juli 2024 - Mars 2024",
           "title": "Programmering 1 (gymnasiekurs)",
           "location": "Gymnasiet",
           "description": "Introduktion till programmeringsgrunder och beräkningstänkande."
         },
         "item2": {
-          "date": "Augusti 2024 - Oktober 2024",
+          "date": "Oktober 2024 - Augusti 2024",
           "title": "Javaprogrammering i ett sammanhang",
           "location": "Teknikhögskolan",
-          "description": "Omfattande Java-grunder, OOP-koncept och byggande av strukturerade applikationer."
+          "description": "Omfattande Java-grunder inklusive objektorienterade programmeringsprinciper, designmönster, undantagshantering, collections-ramverket och byggande av strukturerade, underhållbara applikationer. Fokus på att skriva ren, testbar kod och tillämpa best practices för entreprenörsutveckling."
         },
         "item3": {
-          "date": "Oktober 2024 - Januari 2025",
+          "date": "Januari 2025 - Oktober 2024",
           "title": "Databaser i ett sammanhang",
           "location": "Teknikhögskolan",
-          "description": "Relationsdatabasdesign, SQL, datamodellering och databasoptimeringstekniker."
+          "description": "Relationsdatabasdesignprinciper, SQL-frågeoptimering, datamodellering (ER-diagram, normalisering), transaktionshantering, indexeringsstrategier och prestandajustering. Praktisk erfarenhet med databashanteringssystem och implementering av säkra, effektiva dataåtkomstlager."
         },
         "item4": {
-          "date": "Januari 2025 - Mars 2025",
+          "date": "Mars 2025 - Januari 2025",
           "title": "Backend i ett sammanhang",
           "location": "Teknikhögskolan",
-          "description": "Avancerad backend-utveckling med Spring Boot, RESTful API:er och server-side arkitektur."
+          "description": "Avancerad backend-utveckling med Spring Boot-ramverk, byggande av RESTful API:er med korrekta HTTP-metoder och statuskoder, implementering av autentisering och auktorisering (JWT, OAuth), server-side arkitekturmönster (MVC, lagerad arkitektur), dependency injection och integrering med databaser och externa tjänster."
         },
         "item5": {
-          "date": "Mars 2025 - Maj 2025",
+          "date": "Maj 2025 - Mars 2025",
           "title": "Frontend i ett sammanhang",
           "location": "Teknikhögskolan",
-          "description": "Modern frontend-utveckling med React, komponentarkitektur och UI/UX-principer."
+          "description": "Modern frontend-utveckling med React inklusive hooks, context API, state management, komponentlivscykel, routing, formulärhantering, API-integrering, responsiva designprinciper, CSS-ramverk och UI/UX best practices. Fokus på att bygga tillgängliga, presterande single-page-applikationer."
         },
         "item6": {
-          "date": "Augusti 2025 - September 2025",
+          "date": "September 2025 - Augusti 2025",
           "title": "Objektorienterad analys och design",
           "location": "Teknikhögskolan",
-          "description": "Systemarkitektur, designmönster och OOAD-principer för skalbara applikationer."
+          "description": "Systemarkitektur och design med UML-diagram (klass, sekvens, användningsfall), SOLID-principer, designmönster (Factory, Singleton, Observer, Strategy), domändriven designkoncept och OOAD-metoder för att bygga skalbara, underhållbara mjukvarusystem. Betoning på att översätta affärskrav till tekniska lösningar."
         },
         "item7": {
-          "date": "September 2025 - December 2025",
+          "date": "December 2025 - September 2025",
           "title": "Lärande i arbete 1",
           "location": "Teknikhögskolan",
-          "description": "Praktisk arbetsplatsträning där förvärvade utvecklingsfärdigheter tillämpas i verkliga scenarion."
+          "description": "Utvecklade en online e-butik för schackprodukter och gemenskapsplattform för att koppla samman den svenska schackscenen med klubbar och produkter. Arbetade främst med frontend-teknologier inklusive TypeScript, HTML, CSS, distribuerat på Vercel. Ansvarsområden inkluderade buggfixar, implementering av nya funktioner och integrering av Shopify e-handelsfunktionalitet för produkthantering och checkout."
         },
         "item8": {
-          "date": "December 2025 - Januari 2026",
+          "date": "Januari 2026 - December 2025",
           "title": "Producera och leverera mjukvara",
           "location": "Teknikhögskolan",
-          "description": "Komplett mjukvarulivscykel från produktion till driftsättning och leverans."
+          "description": "Komplett mjukvaruutvecklingslivscykel från planering och produktion till driftsättning och leverans. Täckte projektledningsmetoder, CI/CD-pipeline-uppsättning, containerisering (Docker), molndistribution, övervakning och loggning, dokumentationspraxis och leverans av produktionsklar mjukvara med fokus på kvalitetssäkring och underhållbarhet."
         },
         "item9": {
-          "date": "Februari 2026 - Maj 2026",
+          "date": "Maj 2026 - Februari 2026",
           "title": "Lärande i arbete 2 / Examensarbete",
           "location": "Teknikhögskolan • Pågående",
-          "description": "Slutfas som kombinerar praktisk arbetserfarenhet med examensarbetsutveckling."
+          "description": "Arbetar med en reklamationsapplikation för att hantera garantifall för företag med Java backend med Supabase och MongoDB-databaser, React frontend med HTML/CSS. Ansvarsområden inkluderar att skriva enhets- och integrationstester, kodomstrukturering, buggfixar, implementering av nya funktioner och integrering med ERP-system. Utvecklar samtidigt examensarbetsprojektet 'Personality Miner' med en klasskamrat, undersöker optimala metoder (RAG, fine-tuning eller strukturerad prompting) för att vägleda lokala LLM:er inom etiska gränser."
         }
       }
     },
