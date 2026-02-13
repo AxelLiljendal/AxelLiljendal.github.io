@@ -28,13 +28,13 @@ html,
   --button-bg-start: #2563eb;
   --button-bg-end: #3b82f6;
   --button-hover: #1d4ed8;
-  --download-btn-start: #7c3aed;
-  --download-btn-end: #6366f1;
-  --download-btn-hover-start: #6d28d9;
-  --download-btn-hover-end: #4f46e5;
+  --download-btn-start: #047857;
+  --download-btn-end: #0f766e;
+  --download-btn-hover-start: #065f46;
+  --download-btn-hover-end: #115e59;
   
   /* UI Elements */
-  --profile-border: #2563eb;
+  --profile-border: #059669;
   --contact-btn-bg: #475569;
   --contact-btn-hover: #334155;
   --h2-icon-bg: #1e293b;
@@ -78,13 +78,13 @@ html.dark-mode:root {
   --button-bg-start: #3b82f6;
   --button-bg-end: #60a5fa;
   --button-hover: #2563eb;
-  --download-btn-start: #8b5cf6;
-  --download-btn-end: #a78bfa;
-  --download-btn-hover-start: #7c3aed;
-  --download-btn-hover-end: #8b5cf6;
+  --download-btn-start: #059669;
+  --download-btn-end: #0d9488;
+  --download-btn-hover-start: #047857;
+  --download-btn-hover-end: #0f766e;
   
   /* UI Elements */
-  --profile-border: #60a5fa;
+  --profile-border: #10b981;
   --contact-btn-bg: #475569;
   --contact-btn-hover: #64748b;
   --h2-icon-bg: #3b82f6;
@@ -1391,9 +1391,9 @@ h2:hover .h2-icon svg {
 
 /* Icon-specific colors */
 .summary-icon {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
 }
 
 .education-icon {
@@ -1409,9 +1409,9 @@ h2:hover .h2-icon svg {
 }
 
 .skills-icon {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(67, 233, 123, 0.3);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
 }
 
 .interests-icon {
