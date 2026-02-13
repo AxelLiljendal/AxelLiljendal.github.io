@@ -1,410 +1,109 @@
-/* Base CSS Variables - Default Theme Light Mode */
+/* Modern Professional Design System - Light Mode (Default) */
 html,
 :root {
-  --bg-gradient-start: #e0e7ff;
-  --bg-gradient-mid: #f9fafb;
-  --bg-gradient-end: #c7d2fe;
+  /* Background */
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-mid: #ffffff;
+  --bg-gradient-end: #f1f5f9;
+  
+  /* Surface Colors */
   --header-bg: #ffffff;
-  --header-shadow: rgba(0, 0, 0, 0.03);
-  --header-text: #000000;
-  --link-color: #0078d7;
-  --link-hover: #005fa3;
-  --title-color: #3d8fd1;
-  --text-color: #222222;
-  --button-bg-start: #0078d7;
-  --button-bg-end: #00c6a2;
-  --button-hover: #005fa3;
-  --download-btn-start: #6d28d9;
-  --download-btn-end: #3b82f6;
-  --download-btn-hover-start: #4c1d95;
-  --download-btn-hover-end: #2563eb;
-  --profile-border: #0078d7;
-  --contact-btn-bg: #374151;
-  --contact-btn-hover: #4b5563;
-  --h2-icon-bg: #062044;
-  --border-color: #e5e7eb;
-  --overlay-1: rgba(0, 180, 255, 0.22);
-  --overlay-2: rgba(0, 255, 180, 0.18);
-  --overlay-3: rgba(255, 180, 0, 0.14);
-  --overlay-4: rgba(180, 0, 255, 0.13);
-  --overlay-5: rgba(255, 0, 120, 0.12);
-}
-
-/* Default Theme Dark Mode */
-html.dark-mode,
-html.dark-mode:root {
-  --bg-gradient-start: #0f1729;
-  --bg-gradient-mid: #1a202c;
-  --bg-gradient-end: #0f1729;
-  --header-bg: #1a202c;
-  --header-shadow: rgba(0, 0, 0, 0.5);
-  --header-text: #ffffff;
-  --link-color: #60a5fa;
-  --link-hover: #93c5fd;
-  --title-color: #60a5fa;
-  --text-color: #e5e7eb;
-  --button-bg-start: #3b82f6;
-  --button-bg-end: #10b981;
-  --button-hover: #60a5fa;
-  --download-btn-start: #8b5cf6;
-  --download-btn-end: #60a5fa;
-  --download-btn-hover-start: #7c3aed;
-  --download-btn-hover-end: #3b82f6;
-  --profile-border: #60a5fa;
-  --contact-btn-bg: #4b5563;
-  --contact-btn-hover: #6b7280;
-  --h2-icon-bg: #3b82f6;
-  --border-color: #374151;
-}
-
-/* Theme: Ocean Blue */
-html[data-theme="ocean"] {
-  --bg-gradient-start: #dbeafe;
-  --bg-gradient-mid: #f0f9ff;
-  --bg-gradient-end: #bfdbfe;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #0284c7;
-  --link-hover: #0369a1;
-  --title-color: #0ea5e9;
-  --button-bg-start: #0284c7;
-  --button-bg-end: #06b6d4;
-  --button-hover: #0369a1;
-  --download-btn-start: #0ea5e9;
-  --download-btn-end: #06b6d4;
-  --download-btn-hover-start: #0284c7;
-  --download-btn-hover-end: #0891b2;
-  --profile-border: #0284c7;
-  --h2-icon-bg: #0369a1;
-}
-
-html[data-theme="ocean"].dark-mode {
-  --bg-gradient-start: #0c1929;
-  --bg-gradient-mid: #082f49;
-  --bg-gradient-end: #0c1929;
-  --header-bg: #0c1929;
-  --header-text: #ffffff;
-  --link-color: #7dd3fc;
-  --link-hover: #38bdf8;
-  --title-color: #38bdf8;
-  --text-color: #e0f2fe;
-  --button-bg-start: #0ea5e9;
-  --button-bg-end: #06b6d4;
-  --button-hover: #0284c7;
-  --profile-border: #7dd3fc;
-  --h2-icon-bg: #0369a1;
-}
-
-/* Theme: Forest Green */
-html[data-theme="forest"] {
-  --bg-gradient-start: #d1fae5;
-  --bg-gradient-mid: #f0fdf4;
-  --bg-gradient-end: #a7f3d0;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #059669;
-  --link-hover: #047857;
-  --title-color: #10b981;
-  --button-bg-start: #059669;
-  --button-bg-end: #14b8a6;
-  --button-hover: #047857;
-  --download-btn-start: #10b981;
-  --download-btn-end: #14b8a6;
-  --download-btn-hover-start: #059669;
-  --download-btn-hover-end: #0d9488;
-  --profile-border: #059669;
-  --h2-icon-bg: #047857;
-}
-
-html[data-theme="forest"].dark-mode {
-  --bg-gradient-start: #022c22;
-  --bg-gradient-mid: #064e3b;
-  --bg-gradient-end: #022c22;
-  --header-bg: #022c22;
-  --header-text: #ffffff;
-  --link-color: #6ee7b7;
-  --link-hover: #34d399;
-  --title-color: #34d399;
-  --text-color: #d1fae5;
-  --button-bg-start: #10b981;
-  --button-bg-end: #14b8a6;
-  --button-hover: #059669;
-  --profile-border: #6ee7b7;
-  --h2-icon-bg: #047857;
-}
-
-/* Theme: Sunset Orange */
-html[data-theme="sunset"] {
-  --bg-gradient-start: #fed7aa;
-  --bg-gradient-mid: #fff7ed;
-  --bg-gradient-end: #fecaca;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #ea580c;
-  --link-hover: #c2410c;
-  --title-color: #f97316;
-  --button-bg-start: #ea580c;
-  --button-bg-end: #f43f5e;
-  --button-hover: #c2410c;
-  --download-btn-start: #f97316;
-  --download-btn-end: #f43f5e;
-  --download-btn-hover-start: #ea580c;
-  --download-btn-hover-end: #e11d48;
-  --profile-border: #ea580c;
-  --h2-icon-bg: #c2410c;
-}
-
-html[data-theme="sunset"].dark-mode {
-  --bg-gradient-start: #431407;
-  --bg-gradient-mid: #7c2d12;
-  --bg-gradient-end: #431407;
-  --header-bg: #431407;
-  --header-text: #ffffff;
-  --link-color: #fdba74;
-  --link-hover: #fb923c;
-  --title-color: #fb923c;
-  --text-color: #fed7aa;
-  --button-bg-start: #f97316;
-  --button-bg-end: #f43f5e;
-  --button-hover: #ea580c;
-  --profile-border: #fdba74;
-  --h2-icon-bg: #c2410c;
-}
-
-/* Theme: Royal Purple */
-html[data-theme="royal"] {
-  --bg-gradient-start: #e9d5ff;
-  --bg-gradient-mid: #faf5ff;
-  --bg-gradient-end: #ddd6fe;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #7c3aed;
-  --link-hover: #6d28d9;
-  --title-color: #8b5cf6;
-  --button-bg-start: #7c3aed;
-  --button-bg-end: #a855f7;
-  --button-hover: #6d28d9;
-  --download-btn-start: #8b5cf6;
-  --download-btn-end: #a855f7;
-  --download-btn-hover-start: #7c3aed;
-  --download-btn-hover-end: #9333ea;
-  --profile-border: #7c3aed;
-  --h2-icon-bg: #6d28d9;
-}
-
-html[data-theme="royal"].dark-mode {
-  --bg-gradient-start: #2e1065;
-  --bg-gradient-mid: #4c1d95;
-  --bg-gradient-end: #2e1065;
-  --header-bg: #2e1065;
-  --header-text: #ffffff;
-  --link-color: #d8b4fe;
-  --link-hover: #c084fc;
-  --title-color: #c084fc;
-  --text-color: #e9d5ff;
-  --button-bg-start: #8b5cf6;
-  --button-bg-end: #a855f7;
-  --button-hover: #7c3aed;
-  --profile-border: #d8b4fe;
-  --h2-icon-bg: #6d28d9;
-}
-
-/* Theme: Cherry Blossom */
-html[data-theme="cherry"] {
-  --bg-gradient-start: #fce7f3;
-  --bg-gradient-mid: #fdf2f8;
-  --bg-gradient-end: #fbcfe8;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #db2777;
-  --link-hover: #be185d;
-  --title-color: #ec4899;
-  --button-bg-start: #db2777;
-  --button-bg-end: #ec4899;
-  --button-hover: #be185d;
-  --download-btn-start: #ec4899;
-  --download-btn-end: #f472b6;
-  --download-btn-hover-start: #db2777;
-  --download-btn-hover-end: #ec4899;
-  --profile-border: #db2777;
-  --h2-icon-bg: #be185d;
-}
-
-html[data-theme="cherry"].dark-mode {
-  --bg-gradient-start: #500724;
-  --bg-gradient-mid: #831843;
-  --bg-gradient-end: #500724;
-  --header-bg: #500724;
-  --header-text: #ffffff;
-  --link-color: #fbcfe8;
-  --link-hover: #f9a8d4;
-  --title-color: #f9a8d4;
-  --text-color: #fce7f3;
-  --button-bg-start: #ec4899;
-  --button-bg-end: #f472b6;
-  --button-hover: #db2777;
-  --profile-border: #fbcfe8;
-  --h2-icon-bg: #be185d;
-}
-
-/* Theme: Midnight Blue */
-html[data-theme="midnight"] {
-  --bg-gradient-start: #dbeafe;
-  --bg-gradient-mid: #eff6ff;
-  --bg-gradient-end: #bfdbfe;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #1e40af;
-  --link-hover: #1e3a8a;
-  --title-color: #2563eb;
-  --button-bg-start: #1e40af;
-  --button-bg-end: #3b82f6;
-  --button-hover: #1e3a8a;
-  --download-btn-start: #2563eb;
-  --download-btn-end: #3b82f6;
-  --download-btn-hover-start: #1e40af;
-  --download-btn-hover-end: #2563eb;
-  --profile-border: #1e40af;
-  --h2-icon-bg: #1e3a8a;
-}
-
-html[data-theme="midnight"].dark-mode {
-  --bg-gradient-start: #0c1a3a;
-  --bg-gradient-mid: #1e3a8a;
-  --bg-gradient-end: #0c1a3a;
-  --header-bg: #0c1a3a;
-  --header-text: #ffffff;
-  --link-color: #93c5fd;
-  --link-hover: #60a5fa;
-  --title-color: #60a5fa;
-  --text-color: #dbeafe;
+  --header-shadow: rgba(15, 23, 42, 0.08);
+  --card-bg: #ffffff;
+  
+  /* Text Colors */
+  --header-text: #0f172a;
+  --text-color: #334155;
+  --text-secondary: #64748b;
+  --title-color: #1e293b;
+  
+  /* Accent Colors - Modern Blue */
+  --accent-primary: #2563eb;
+  --accent-primary-hover: #1d4ed8;
+  --accent-secondary: #3b82f6;
+  --link-color: #2563eb;
+  --link-hover: #1d4ed8;
+  
+  /* Button Colors */
   --button-bg-start: #2563eb;
   --button-bg-end: #3b82f6;
-  --button-hover: #1e40af;
-  --profile-border: #93c5fd;
-  --h2-icon-bg: #1e3a8a;
+  --button-hover: #1d4ed8;
+  --download-btn-start: #7c3aed;
+  --download-btn-end: #6366f1;
+  --download-btn-hover-start: #6d28d9;
+  --download-btn-hover-end: #4f46e5;
+  
+  /* UI Elements */
+  --profile-border: #2563eb;
+  --contact-btn-bg: #475569;
+  --contact-btn-hover: #334155;
+  --h2-icon-bg: #1e293b;
+  --border-color: #e2e8f0;
+  
+  /* Overlay Effects */
+  --overlay-1: rgba(37, 99, 235, 0.06);
+  --overlay-2: rgba(99, 102, 241, 0.05);
+  --overlay-3: rgba(124, 58, 237, 0.04);
+  --overlay-4: rgba(59, 130, 246, 0.04);
+  --overlay-5: rgba(139, 92, 246, 0.03);
 }
 
-/* Theme: Slate Gray */
-html[data-theme="slate"] {
-  --bg-gradient-start: #e2e8f0;
-  --bg-gradient-mid: #f8fafc;
-  --bg-gradient-end: #cbd5e1;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #475569;
-  --link-hover: #334155;
-  --title-color: #64748b;
-  --button-bg-start: #475569;
-  --button-bg-end: #64748b;
-  --button-hover: #334155;
-  --download-btn-start: #64748b;
-  --download-btn-end: #475569;
-  --download-btn-hover-start: #475569;
-  --download-btn-hover-end: #334155;
-  --profile-border: #475569;
-  --h2-icon-bg: #334155;
-}
-
-html[data-theme="slate"].dark-mode {
+/* Modern Professional Design System - Dark Mode */
+html.dark-mode,
+html.dark-mode:root {
+  /* Background - Soft Dark */
   --bg-gradient-start: #0f172a;
   --bg-gradient-mid: #1e293b;
   --bg-gradient-end: #0f172a;
-  --header-bg: #0f172a;
-  --header-text: #ffffff;
-  --link-color: #cbd5e1;
-  --link-hover: #94a3b8;
-  --title-color: #94a3b8;
-  --text-color: #e2e8f0;
-  --button-bg-start: #64748b;
-  --button-bg-end: #94a3b8;
-  --button-hover: #475569;
-  --profile-border: #cbd5e1;
-  --h2-icon-bg: #334155;
-}
-
-/* Theme: Amber Gold */
-html[data-theme="amber"] {
-  --bg-gradient-start: #fef3c7;
-  --bg-gradient-mid: #fffbeb;
-  --bg-gradient-end: #fde68a;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #d97706;
-  --link-hover: #b45309;
-  --title-color: #f59e0b;
-  --button-bg-start: #d97706;
-  --button-bg-end: #f59e0b;
-  --button-hover: #b45309;
-  --download-btn-start: #f59e0b;
-  --download-btn-end: #fbbf24;
-  --download-btn-hover-start: #d97706;
-  --download-btn-hover-end: #f59e0b;
-  --profile-border: #d97706;
-  --h2-icon-bg: #b45309;
-}
-
-html[data-theme="amber"].dark-mode {
-  --bg-gradient-start: #451a03;
-  --bg-gradient-mid: #78350f;
-  --bg-gradient-end: #451a03;
-  --header-bg: #451a03;
-  --header-text: #ffffff;
-  --link-color: #fde68a;
-  --link-hover: #fcd34d;
-  --title-color: #fcd34d;
-  --text-color: #fef3c7;
-  --button-bg-start: #f59e0b;
-  --button-bg-end: #fbbf24;
-  --button-hover: #d97706;
-  --profile-border: #fde68a;
-  --h2-icon-bg: #b45309;
-}
-
-/* Theme: Crimson Red */
-html[data-theme="crimson"] {
-  --bg-gradient-start: #fee2e2;
-  --bg-gradient-mid: #fef2f2;
-  --bg-gradient-end: #fecaca;
-  --header-bg: #ffffff;
-  --header-text: #000000;
-  --link-color: #dc2626;
-  --link-hover: #b91c1c;
-  --title-color: #ef4444;
-  --button-bg-start: #dc2626;
-  --button-bg-end: #ef4444;
-  --button-hover: #b91c1c;
-  --download-btn-start: #ef4444;
-  --download-btn-end: #f87171;
-  --download-btn-hover-start: #dc2626;
-  --download-btn-hover-end: #ef4444;
-  --profile-border: #dc2626;
-  --h2-icon-bg: #b91c1c;
-}
-
-html[data-theme="crimson"].dark-mode {
-  --bg-gradient-start: #450a0a;
-  --bg-gradient-mid: #7f1d1d;
-  --bg-gradient-end: #450a0a;
-  --header-bg: #450a0a;
-  --header-text: #ffffff;
-  --link-color: #fecaca;
-  --link-hover: #fca5a5;
-  --title-color: #fca5a5;
-  --text-color: #fee2e2;
-  --button-bg-start: #ef4444;
-  --button-bg-end: #f87171;
-  --button-hover: #dc2626;
-  --profile-border: #fecaca;
-  --h2-icon-bg: #b91c1c;
+  
+  /* Surface Colors */
+  --header-bg: #1e293b;
+  --header-shadow: rgba(0, 0, 0, 0.4);
+  --card-bg: #1e293b;
+  
+  /* Text Colors - Reduced Contrast */
+  --header-text: #f1f5f9;
+  --text-color: #cbd5e1;
+  --text-secondary: #94a3b8;
+  --title-color: #e2e8f0;
+  
+  /* Accent Colors - Brighter for Dark */
+  --accent-primary: #60a5fa;
+  --accent-primary-hover: #93c5fd;
+  --accent-secondary: #3b82f6;
+  --link-color: #60a5fa;
+  --link-hover: #93c5fd;
+  
+  /* Button Colors */
+  --button-bg-start: #3b82f6;
+  --button-bg-end: #60a5fa;
+  --button-hover: #2563eb;
+  --download-btn-start: #8b5cf6;
+  --download-btn-end: #a78bfa;
+  --download-btn-hover-start: #7c3aed;
+  --download-btn-hover-end: #8b5cf6;
+  
+  /* UI Elements */
+  --profile-border: #60a5fa;
+  --contact-btn-bg: #475569;
+  --contact-btn-hover: #64748b;
+  --h2-icon-bg: #3b82f6;
+  --border-color: #334155;
+  
+  /* Overlay Effects - Subtle */
+  --overlay-1: rgba(96, 165, 250, 0.08);
+  --overlay-2: rgba(139, 92, 246, 0.06);
+  --overlay-3: rgba(59, 130, 246, 0.05);
+  --overlay-4: rgba(167, 139, 250, 0.04);
+  --overlay-5: rgba(96, 165, 250, 0.04);
 }
 
 /* Base Styles */
 body {
-  font-family: 'Segoe UI', 'Inter', 'Roboto', 'Arial', 'Helvetica Neue', system-ui, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.011em;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -414,6 +113,8 @@ body {
   position: relative;
   overflow-x: hidden;
   transition: background 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::before {
@@ -534,8 +235,9 @@ header nav {
 header nav a {
   color: var(--header-text);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 450;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
   transition: color 0.2s;
 }
 
@@ -550,7 +252,8 @@ header nav a:focus {
   border: none;
   color: var(--header-text);
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: -0.02em;
   font-family: inherit;
   cursor: pointer;
   padding: 0 0.9em 0 0;
@@ -824,42 +527,43 @@ section {
 /* Education Card */
 .education-card {
   background: var(--header-bg);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  border-left: 5px solid #f093fb;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #f093fb;
   transition: all 0.3s ease;
 }
 
 .education-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .education-header h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.5rem;
-  font-weight: 700;
+  margin: 0 0 0.625rem 0;
+  font-size: 1.375rem;
+  font-weight: 600;
   color: var(--text-color);
+  letter-spacing: -0.015em;
   line-height: 1.3;
 }
 
 .education-meta {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.125rem;
   flex-wrap: wrap;
 }
 
 .education-institution {
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--link-color);
 }
 
 .education-duration {
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 450;
   color: var(--text-color);
   opacity: 0.75;
 }
@@ -946,11 +650,11 @@ section {
 
 .timeline-date {
   text-align: right;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 500;
+  font-size: 0.9rem;
   color: var(--link-color);
   padding-top: 0.25rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   word-spacing: 100vw;
   line-height: 1.4;
 }
@@ -975,30 +679,31 @@ section {
 
 .timeline-content {
   background: var(--header-bg);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 1.375rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
-  border-left: 4px solid var(--link-color);
+  border-left: 3px solid var(--link-color);
 }
 
 .timeline-content:hover {
-  transform: translateX(8px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateX(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--text-color);
 }
 
 .timeline-location {
   margin: 0 0 1rem 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--link-color);
-  font-weight: 500;
+  font-weight: 450;
   opacity: 0.85;
 }
 
@@ -1241,17 +946,17 @@ section {
 
 .project-card {
   background: var(--header-bg);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .project-status {
@@ -1310,11 +1015,12 @@ section {
 .project-link {
   background: #ffffff;
   color: var(--link-color);
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
+  padding: 0.7rem 1.75rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
   transition: all 0.3s ease;
 }
 
@@ -1538,38 +1244,42 @@ button {
   background: linear-gradient(90deg, var(--button-bg-start) 0%, var(--button-bg-end) 100%);
   color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 450;
+  letter-spacing: -0.01em;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  filter: brightness(0.9);
+  filter: brightness(0.92);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .download-cv-btn {
   display: flex;
   align-items: center;
-  gap: 0.7em;
+  gap: 0.625em;
   background: linear-gradient(90deg, var(--download-btn-start) 0%, var(--download-btn-end) 100%);
   color: #fff;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.015em;
   border: none;
-  border-radius: 16px;
-  padding: 0.8em 2em;
+  border-radius: 12px;
+  padding: 0.75em 1.75em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .download-cv-btn:hover,
 .download-cv-btn:focus {
   background: linear-gradient(90deg, var(--download-btn-hover-start) 0%, var(--download-btn-hover-end) 100%);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
   transform: translateY(-2px);
 }
 
@@ -1637,8 +1347,9 @@ button,
 h2 {
   display: flex;
   align-items: center;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin-bottom: 0.8em;
   position: relative;
 }
