@@ -1071,8 +1071,9 @@ section {
   color: #ffffff;
   padding: 0.35rem 0.8rem;
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
 }
 
@@ -1090,27 +1091,27 @@ section {
 }
 
 .project-card:nth-child(2) .project-image {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
 }
 
 .project-card:nth-child(2) .tag {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
 }
 
 .project-card:nth-child(3) .project-image {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #2fc660 0%, #1fd4b8 100%);
 }
 
 .project-card:nth-child(3) .tag {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #2fc660 0%, #1fd4b8 100%);
 }
 
 .project-card:nth-child(4) .project-image {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #f74078 0%, #fbc617 100%);
 }
 
 .project-card:nth-child(4) .tag {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #f74078 0%, #fbc617 100%);
 }
 
 .project-card:nth-child(5) .project-image {
@@ -1130,19 +1131,19 @@ section {
 }
 
 .project-card:nth-child(7) .project-image {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #6ed4cf 0%, #f9adc4 100%);
 }
 
 .project-card:nth-child(7) .tag {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #6ed4cf 0%, #f9adc4 100%);
 }
 
 .project-card:nth-child(8) .project-image {
-  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%);
 }
 
 .project-card:nth-child(8) .tag {
-  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%);
 }
 
 /* Clean Icon Badge Layout for Interests */
