@@ -70,13 +70,11 @@ const i18n = {
     
     if (!langToggle || !langDropdown) return;
 
-    // Toggle dropdown
     langToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       langDropdown.classList.toggle('show');
     });
 
-    // Select language
     langOptions.forEach(option => {
       option.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -88,7 +86,6 @@ const i18n = {
       });
     });
 
-    // Close dropdown when clicking outside
     document.addEventListener('click', (e) => {
       if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
         langDropdown.classList.remove('show');
@@ -118,13 +115,11 @@ document.addEventListener('DOMContentLoaded', function () {
   applyTheme(currentTheme, savedMode);
   updateThemeCheckmarks();
 
-  // Toggle theme dropdown
   themeSelector.addEventListener('click', (e) => {
     e.stopPropagation();
     themeDropdown.classList.toggle('show');
   });
 
-  // Select theme
   themeOptions.forEach(option => {
     option.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -140,7 +135,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     if (!themeSelector.contains(e.target) && !themeDropdown.contains(e.target)) {
       themeDropdown.classList.remove('show');
@@ -171,29 +165,23 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyTheme(theme, darkMode) {
     const html = document.documentElement;
     const body = document.body;
-    
-    // Remove dark mode class first
+
     html.classList.remove('dark-mode');
     html.removeAttribute('data-theme');
-    
-    // Apply theme
+
     if (theme !== 'default') {
       html.setAttribute('data-theme', theme);
     }
-    
-    // Apply dark mode
+ 
     if (darkMode) {
       html.classList.add('dark-mode');
     }
 
-    // Aggressive mobile repaint strategy
-    // Force immediate style recalculation on multiple elements
     void html.offsetHeight;
     void body.offsetHeight;
     window.getComputedStyle(body, '::before').getPropertyValue('opacity');
     window.getComputedStyle(body, '::after').getPropertyValue('opacity');
-    
-    // Force repaint with requestAnimationFrame chain
+
     requestAnimationFrame(() => {
       body.style.transform = 'translateZ(0)';
       requestAnimationFrame(() => {
@@ -201,10 +189,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Update button icon
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
 
-    // Update aria label
     const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
     const translation = i18n.getNestedTranslation(ariaKey);
     if (translation) {
