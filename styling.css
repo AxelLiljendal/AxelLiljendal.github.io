@@ -197,6 +197,7 @@ header {
   top: 0;
   z-index: 100;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+  isolation: isolate;
 }
 
 html.dark-mode header {
@@ -221,6 +222,8 @@ html.dark-mode header {
   align-items: center;
   gap: 0.75rem;
   margin-right: 2vw;
+  position: relative;
+  z-index: 10;
 }
 
 header nav {
@@ -298,6 +301,10 @@ header nav a:focus {
   width: 44px;
   height: 44px;
   padding: 8px;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  touch-action: manipulation;
 }
 
 #theme-toggle svg {
