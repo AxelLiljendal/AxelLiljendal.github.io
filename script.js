@@ -100,94 +100,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.getElementById('theme-toggle');
-  const themeSelector = document.getElementById('theme-selector');
-  const themeDropdown = document.getElementById('theme-dropdown');
-  const themeOptions = document.querySelectorAll('.theme-option');
   
-  if (!toggleBtn || !themeSelector || !themeDropdown) return;
+  if (!toggleBtn) return;
   
   const sunSVG = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>`;
   const moonSVG = `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/></svg>`;
 
-  let currentTheme = localStorage.getItem('selectedTheme') || 'default';
   const savedMode = localStorage.getItem('darkMode') === 'true';
   
-  applyTheme(currentTheme, savedMode);
-  updateThemeCheckmarks();
-
-  themeSelector.addEventListener('click', (e) => {
-    e.stopPropagation();
-    themeDropdown.classList.toggle('show');
-  });
-
-  themeOptions.forEach(option => {
-    option.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const selectedTheme = option.getAttribute('data-theme');
-      if (selectedTheme !== currentTheme) {
-        currentTheme = selectedTheme;
-        const isDark = document.documentElement.classList.contains('dark-mode');
-        applyTheme(currentTheme, isDark);
-        updateThemeCheckmarks();
-        localStorage.setItem('selectedTheme', currentTheme);
-      }
-      themeDropdown.classList.remove('show');
-    });
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!themeSelector.contains(e.target) && !themeDropdown.contains(e.target)) {
-      themeDropdown.classList.remove('show');
-    }
-  });
+  applyDarkMode(savedMode);
 
   toggleBtn.addEventListener('click', () => {
     const isDark = !document.documentElement.classList.contains('dark-mode');
-    applyTheme(currentTheme, isDark);
+    applyDarkMode(isDark);
     localStorage.setItem('darkMode', isDark);
   });
 
-  function updateThemeCheckmarks() {
-    themeOptions.forEach(option => {
-      const themeValue = option.getAttribute('data-theme');
-      const checkmark = option.querySelector('.theme-check');
-      
-      if (themeValue === currentTheme) {
-        checkmark.style.visibility = 'visible';
-        option.classList.add('active');
-      } else {
-        checkmark.style.visibility = 'hidden';
-        option.classList.remove('active');
-      }
-    });
-  }
-
-  function applyTheme(theme, darkMode) {
+  function applyDarkMode(darkMode) {
     const html = document.documentElement;
-    const body = document.body;
 
-    html.classList.remove('dark-mode');
-    html.removeAttribute('data-theme');
-
-    if (theme !== 'default') {
-      html.setAttribute('data-theme', theme);
-    }
- 
     if (darkMode) {
       html.classList.add('dark-mode');
+    } else {
+      html.classList.remove('dark-mode');
     }
-
-    void html.offsetHeight;
-    void body.offsetHeight;
-    window.getComputedStyle(body, '::before').getPropertyValue('opacity');
-    window.getComputedStyle(body, '::after').getPropertyValue('opacity');
-
-    requestAnimationFrame(() => {
-      body.style.transform = 'translateZ(0)';
-      requestAnimationFrame(() => {
-        body.style.transform = '';
-      });
-    });
 
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
 

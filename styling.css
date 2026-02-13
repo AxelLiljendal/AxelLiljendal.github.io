@@ -582,93 +582,6 @@ header nav a:focus {
 }
 
 /* Theme Selector */
-.theme-selector-wrapper {
-  position: relative;
-}
-
-#theme-selector {
-  background: transparent;
-  border: none;
-  color: var(--header-text);
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 0.4rem 0.6rem;
-  cursor: pointer;
-  transition: color 0.2s;
-  font-family: inherit;
-  height: 44px;
-  display: flex;
-  align-items: center;
-}
-
-#theme-selector:hover,
-#theme-selector:focus {
-  color: var(--link-hover);
-  outline: none;
-}
-
-.theme-dropdown {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  background: var(--header-bg);
-  border: 2px solid var(--link-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  min-width: 180px;
-  display: none;
-  flex-direction: column;
-  z-index: 1000;
-  overflow: hidden;
-  max-height: 400px;
-  overflow-y: auto;
-}
-
-.theme-dropdown.show {
-  display: flex;
-}
-
-.theme-option {
-  background: transparent;
-  border: none;
-  color: var(--text-color);
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 10px 16px;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.2s;
-  font-family: inherit;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.theme-option:hover {
-  background: var(--link-color);
-  color: var(--header-bg);
-}
-
-.theme-option.active {
-  background: rgba(0, 120, 215, 0.1);
-}
-
-.theme-check {
-  font-size: 1rem;
-  color: var(--link-color);
-  visibility: hidden;
-  width: 16px;
-  flex-shrink: 0;
-}
-
-.theme-option.active .theme-check {
-  visibility: visible;
-}
-
-.theme-option:hover .theme-check {
-  color: var(--header-bg);
-}
-
 #theme-toggle {
   background: transparent;
   border: none;
@@ -1891,13 +1804,6 @@ h2:hover .h2-icon {
     height: 40px;
     min-width: 40px;
     font-size: 1.1rem;
-    flex-shrink: 0;
-  }
-
-  #theme-selector {
-    font-size: 0.8rem;
-    padding: 0.25rem 0.4rem;
-    max-width: 90px;
     flex-shrink: 0;
   }
 
