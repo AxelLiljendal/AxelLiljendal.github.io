@@ -1241,30 +1241,81 @@ section {
 
 /* Branch color variations */
 .branch-group:nth-child(1) .main-branch {
-  border-color: #667eea;
+  border-color: #8b5cf6;
+}
+
+.branch-group:nth-child(1) .skill-node {
+  border-color: #8b5cf6;
 }
 
 .branch-group:nth-child(1) .skill-node:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-color: #764ba2;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  border-color: #7c3aed;
 }
 
 .branch-group:nth-child(2) .main-branch {
-  border-color: #4facfe;
+  border-color: #3b82f6;
+}
+
+.branch-group:nth-child(2) .skill-node {
+  border-color: #3b82f6;
 }
 
 .branch-group:nth-child(2) .skill-node:hover {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  border-color: #00f2fe;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-color: #2563eb;
 }
 
 .branch-group:nth-child(3) .main-branch {
-  border-color: #43e97b;
+  border-color: #10b981;
+}
+
+.branch-group:nth-child(3) .skill-node {
+  border-color: #10b981;
 }
 
 .branch-group:nth-child(3) .skill-node:hover {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-  border-color: #38f9d7;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: #059669;
+}
+
+.branch-group:nth-child(4) .main-branch {
+  border-color: #ec4899;
+}
+
+.branch-group:nth-child(4) .skill-node {
+  border-color: #ec4899;
+}
+
+.branch-group:nth-child(4) .skill-node:hover {
+  background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+  border-color: #db2777;
+}
+
+.branch-group:nth-child(5) .main-branch {
+  border-color: #f97316;
+}
+
+.branch-group:nth-child(5) .skill-node {
+  border-color: #f97316;
+}
+
+.branch-group:nth-child(5) .skill-node:hover {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  border-color: #ea580c;
+}
+
+.branch-group:nth-child(6) .main-branch {
+  border-color: #06b6d4;
+}
+
+.branch-group:nth-child(6) .skill-node {
+  border-color: #06b6d4;
+}
+
+.branch-group:nth-child(6) .skill-node:hover {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  border-color: #0891b2;
 }
 
 /* Project Cards */
