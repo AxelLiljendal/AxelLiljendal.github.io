@@ -16,6 +16,7 @@ const i18n = {
       this.currentLanguage = lang;
       this.applyTranslations();
       this.updateLanguageButton();
+      this.updateFlag();
       document.documentElement.lang = lang;
       localStorage.setItem('language', lang);
     } catch (error) {
@@ -67,8 +68,12 @@ const i18n = {
     const langToggle = document.getElementById('lang-toggle');
     const langDropdown = document.getElementById('lang-dropdown');
     const langOptions = document.querySelectorAll('.lang-option');
+    const flagIcon = document.getElementById('flag-icon');
     
     if (!langToggle || !langDropdown) return;
+
+    this.updateFlag();
+    this.updateLanguageCheckmarks();
 
     langToggle.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -81,6 +86,8 @@ const i18n = {
         const selectedLang = option.getAttribute('data-lang');
         if (selectedLang !== this.currentLanguage) {
           this.loadLanguage(selectedLang);
+          this.updateFlag();
+          this.updateLanguageCheckmarks();
         }
         langDropdown.classList.remove('show');
       });
@@ -91,6 +98,50 @@ const i18n = {
         langDropdown.classList.remove('show');
       }
     });
+  },
+
+  updateLanguageCheckmarks() {
+    const langOptions = document.querySelectorAll('.lang-option');
+    langOptions.forEach(option => {
+      const lang = option.getAttribute('data-lang');
+      const checkmark = option.querySelector('.lang-check');
+      
+      if (lang === this.currentLanguage) {
+        checkmark.style.visibility = 'visible';
+        option.classList.add('active');
+      } else {
+        checkmark.style.visibility = 'hidden';
+        option.classList.remove('active');
+      }
+    });
+  },
+
+  updateFlag() {
+    const flagIcon = document.getElementById('flag-icon');
+    if (!flagIcon) return;
+
+    if (this.currentLanguage === 'sv') {
+      flagIcon.innerHTML = `
+        <rect width="32" height="24" fill="#006AA7"/>
+        <rect x="9" y="0" width="4" height="24" fill="#FECC00"/>
+        <rect x="0" y="10" width="32" height="4" fill="#FECC00"/>
+      `;
+    } else {
+      flagIcon.innerHTML = `
+        <defs>
+          <clipPath id="uk-clip">
+            <rect width="32" height="24" rx="2"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#uk-clip)">
+          <rect width="32" height="24" fill="#012169"/>
+          <path d="M0,0 L32,24 M32,0 L0,24" stroke="#FFF" stroke-width="5.3"/>
+          <path d="M0,0 L32,24 M32,0 L0,24" stroke="#C8102E" stroke-width="3.2"/>
+          <path d="M16,0 L16,24 M0,12 L32,12" stroke="#FFF" stroke-width="8"/>
+          <path d="M16,0 L16,24 M0,12 L32,12" stroke="#C8102E" stroke-width="4.8"/>
+        </g>
+      `;
+    }
   }
 };
 
