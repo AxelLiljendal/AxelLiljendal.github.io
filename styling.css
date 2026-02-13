@@ -1435,6 +1435,46 @@ section {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
+.project-card:nth-child(4) .project-image {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.project-card:nth-child(4) .tag {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.project-card:nth-child(5) .project-image {
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+}
+
+.project-card:nth-child(5) .tag {
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+}
+
+.project-card:nth-child(6) .project-image {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.project-card:nth-child(6) .tag {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.project-card:nth-child(7) .project-image {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.project-card:nth-child(7) .tag {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.project-card:nth-child(8) .project-image {
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+}
+
+.project-card:nth-child(8) .tag {
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+}
+
 /* Clean Icon Badge Layout for Interests */
 .interest-badges {
   display: grid;
