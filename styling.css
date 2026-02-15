@@ -3,9 +3,15 @@
   background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
 }
 
-.project-card:nth-child(3) .tag,
+
+.project-card:nth-child(2) .tag {
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%); /* Claims */
+}
+.project-card:nth-child(3) .tag {
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); /* Personality Miner */
+}
 .project-card:nth-child(4) .tag {
-  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Finance Tracker */
 }
 
 
@@ -1214,7 +1220,7 @@ section {
 }
 
 .project-card:nth-child(5) .tag {
-  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); /* PlantSwap */
 }
 
 .project-card:nth-child(6) .project-image {
@@ -1222,7 +1228,7 @@ section {
 }
 
 .project-card:nth-child(6) .tag {
-  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); /* HealthcareSDLC */
 }
 
 .project-card:nth-child(7) .project-image {
@@ -1230,7 +1236,7 @@ section {
 }
 
 .project-card:nth-child(7) .tag {
-  background: linear-gradient(135deg, #6ed4cf 0%, #f9adc4 100%);
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); /* HOMI */
 }
 
 .project-card:nth-child(8) .project-image {
@@ -1238,7 +1244,7 @@ section {
 }
 
 .project-card:nth-child(8) .tag {
-  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%);
+  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%); /* Budget Tracker */
 }
 
 /* Clean Icon Badge Layout for Interests */
