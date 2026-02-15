@@ -216,74 +216,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('resize', updateDropdownVisibility);
   updateDropdownVisibility();
-  // Modal logic for project details
   const modal = document.getElementById('project-modal');
   const modalBody = document.getElementById('modal-body');
   const closeModalBtn = document.getElementById('close-modal');
   const seeMoreBtns = document.querySelectorAll('.see-more-btn');
 
-  // Project details data
   const projectDetails = {
     schackeriet: {
-      title: 'Schackeriet',
-      description: 'E-commerce platform for chess products and community connecting Swedish chess enthusiasts with clubs and products. Developed frontend with TypeScript, integrated Shopify for product management and checkout, and deployed on Vercel.',
+      key: 'project7',
       tags: ['TypeScript', 'React', 'Vercel', 'Shopify', 'E-commerce', 'HTML/CSS'],
       live: 'https://www.schackeriet.se/sv',
       repo: null
     },
     claims: {
-      title: 'Claims Management System',
-      description: 'Enterprise application for handling warranty cases and business claims. Developed Java backend with Supabase and MongoDB integration, React frontend, comprehensive testing suite, and ERP system integration for seamless business workflows.',
+      key: 'project8',
       tags: ['Java', 'Spring Boot', 'React', 'Supabase', 'MongoDB', 'ERP Integration', 'Testing'],
       live: 'https://claims-handler.vercel.app/',
       repo: null
     },
     'personality-miner': {
-      title: 'Personality Miner',
-      description: 'Thesis project investigating which method – RAG (Retrieval-Augmented Generation), fine-tuning, or structured prompting – is most effective for guiding a local Large Language Model (LLM) to stay within defined ethical boundaries during psychological self-reflection.',
+      key: 'project6',
       tags: ['Python', 'LLM', 'RAG', 'Machine Learning', 'Ethics'],
       live: null,
       repo: null
     },
     'finance-tracker': {
-      title: 'Finance Tracker',
-      description: 'A comprehensive personal finance tracking application with full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals.',
+      key: 'project5',
       tags: ['Java', 'Spring Boot', 'React', 'MongoDB', 'Spring Security', 'CI/CD', 'Testing'],
       live: null,
       repos: [
-        { label: 'Backend Repository', url: 'https://github.com/AxelLiljendal/finance-tracker-backend' }
+        { labelKey: 'backendRepo', url: 'https://github.com/AxelLiljendal/finance-tracker-backend' }
       ]
     },
     healthcaresdlc: {
-      title: 'HealthcareSDLC',
-      description: 'A collaborative healthcare booking application developed by a team of 4, emphasizing SDLC methodology, DevOps, and DevSecOps practices with automated CI/CD pipelines and code quality monitoring.',
+      key: 'project4',
       tags: ['Java', 'React', 'PostgreSQL', 'Docker', 'CI/CD', 'SonarQube'],
       live: null,
       repos: [
-        { label: 'Backend Repository', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds' },
-        { label: 'Frontend Repository', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds-Frontend' }
+        { labelKey: 'backendRepo', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds' },
+        { labelKey: 'frontendRepo', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds-Frontend' }
       ]
     },
     homi: {
-      title: 'Homi',
-      description: 'A collaborative full-stack Airbnb clone built with a team of 3 developers. Features property listings, user authentication, and booking system with separate backend and frontend repositories.',
+      key: 'project3',
       tags: ['Java', 'Spring Boot', 'React', 'MongoDB', 'Security'],
       live: null,
       repos: [
-        { label: 'Backend Repository', url: 'https://github.com/Leo-J-Skola/Backend_Grupp' },
-        { label: 'Frontend Repository', url: 'https://github.com/Leo-J-Skola/Frontend_Grupp' }
+        { labelKey: 'backendRepo', url: 'https://github.com/Leo-J-Skola/Backend_Grupp' },
+        { labelKey: 'frontendRepo', url: 'https://github.com/Leo-J-Skola/Frontend_Grupp' }
       ]
     },
     plantswap: {
-      title: 'Plantswap',
-      description: 'A Spring Boot marketplace application enabling users to buy, sell, and trade plants with other enthusiasts in a community-driven platform.',
+      key: 'project2',
       tags: ['Java', 'Spring Boot'],
       live: null,
       repo: 'https://github.com/AxelLiljendal/plantswap'
     },
     'budget-tracker': {
-      title: 'Budget Tracker',
-      description: 'A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories.',
+      key: 'project1',
       tags: ['Java', 'Spring Boot'],
       live: null,
       repo: 'https://github.com/AxelLiljendal/Uppgift-2'
@@ -293,21 +283,27 @@ document.addEventListener('DOMContentLoaded', function () {
   function renderModalContent(projectKey) {
     const data = projectDetails[projectKey];
     if (!data) return '<div>Project details not found.</div>';
-    let html = `<h2>${data.title}</h2>`;
-    html += `<p>${data.description}</p>`;
+    const t = (key) => i18n.getNestedTranslation(key) || key;
+    let html = `<h2>${t('sections.projects.' + data.key + '.title')}</h2>`;
+    html += `<p>${t('sections.projects.' + data.key + '.description')}</p>`;
     if (data.tags && data.tags.length) {
       html += '<div class="project-tags">' + data.tags.map(tag => `<span class="tag">${tag}</span>`).join('') + '</div>';
     }
     html += '<div style="margin-top:1.5em;display:flex;gap:1em;flex-wrap:wrap;">';
     if (data.live) {
-      html += `<a href="${data.live}" target="_blank" class="project-link" style="margin-bottom:0.5em;">Live Site</a>`;
+      html += `<a href="${data.live}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${t('sections.projects.viewLiveSite')}</a>`;
     }
     if (data.repos && Array.isArray(data.repos)) {
       data.repos.forEach(repoObj => {
-        html += `<a href="${repoObj.url}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${repoObj.label}</a>`;
+        let label = t('sections.projects.' + (repoObj.labelKey || 'repo'));
+        if (label === 'sections.projects.' + (repoObj.labelKey || 'repo')) {
+          if (repoObj.labelKey === 'backendRepo') label = t('sections.projects.backendRepo') || 'Backend Repository';
+          if (repoObj.labelKey === 'frontendRepo') label = t('sections.projects.frontendRepo') || 'Frontend Repository';
+        }
+        html += `<a href="${repoObj.url}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${label}</a>`;
       });
     } else if (data.repo) {
-      html += `<a href="${data.repo}" target="_blank" class="project-link" style="margin-bottom:0.5em;">Repository</a>`;
+      html += `<a href="${data.repo}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${t('sections.projects.viewProject')}</a>`;
     }
     html += '</div>';
     return html;
