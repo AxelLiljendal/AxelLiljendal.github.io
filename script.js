@@ -264,7 +264,11 @@ document.addEventListener('DOMContentLoaded', function () {
       repos: [
         { labelKey: 'backendRepo', url: 'https://github.com/Leo-J-Skola/Backend_Grupp' },
         { labelKey: 'frontendRepo', url: 'https://github.com/Leo-J-Skola/Frontend_Grupp' }
-      ]
+      ],
+      contributions: {
+        sv: "Bidragit med backendutveckling (Spring Boot), API-design, databasmodellering, integration med MongoDB, och säkerhetsimplementering. Deltagit i kodgranskning och teamkommunikation.",
+        en: "Contributed with backend development (Spring Boot), API design, database modeling, MongoDB integration, and security implementation. Participated in code review and team communication."
+      }
     },
     plantswap: {
       key: 'project2',
@@ -288,6 +292,13 @@ document.addEventListener('DOMContentLoaded', function () {
     html += `<p>${t('sections.projects.' + data.key + '.description')}</p>`;
     if (data.tags && data.tags.length) {
       html += '<div class="project-tags">' + data.tags.map(tag => `<span class="tag">${tag}</span>`).join('') + '</div>';
+    }
+    if (data.contributions) {
+      const lang = i18n.currentLanguage || 'sv';
+      const contrib = data.contributions[lang];
+      if (contrib) {
+        html += `<div class="project-contributions" style="margin-top:1em;"><strong>${lang === 'sv' ? 'Mina bidrag' : 'My Contributions'}:</strong><br>${contrib}</div>`;
+      }
     }
     html += '<div style="margin-top:1.5em;display:flex;gap:1em;flex-wrap:wrap;">';
     if (data.live) {
