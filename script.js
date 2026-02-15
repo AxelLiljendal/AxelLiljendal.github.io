@@ -232,7 +232,11 @@ document.addEventListener('DOMContentLoaded', function () {
       key: 'project8',
       tags: ['Java', 'Spring Boot', 'React', 'Supabase', 'MongoDB', 'ERP Integration', 'Testing'],
       live: 'https://claims-handler.vercel.app/',
-      repo: null
+      repo: null,
+      contributions: {
+        sv: "Bidragit med backendutveckling, integration med Supabase och MongoDB, testskrivning, ERP-systemintegration, och kodgranskning.",
+        en: "Contributed with backend development, Supabase and MongoDB integration, test writing, ERP system integration, and code review."
+      }
     },
     'personality-miner': {
       key: 'project6',
