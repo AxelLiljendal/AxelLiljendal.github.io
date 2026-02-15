@@ -206,7 +206,17 @@ document.addEventListener('DOMContentLoaded', function () {
     e.stopPropagation();
     middle.classList.toggle('mobile-active');
   });
-  
+
+  // Close dropdown when nav link is clicked (mobile only)
+  const navLinks = middle.querySelectorAll('nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      if (window.innerWidth <= 600) {
+        middle.classList.remove('mobile-active');
+      }
+    });
+  });
+
   document.addEventListener('click', function (e) {
     if (window.innerWidth > 600) return;
     if (!middle.contains(e.target) && !dropdown.contains(e.target)) {
