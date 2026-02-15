@@ -295,15 +295,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (data.repos && Array.isArray(data.repos)) {
       data.repos.forEach(repoObj => {
-        let label = t('sections.projects.' + (repoObj.labelKey || 'repo'));
-        if (label === 'sections.projects.' + (repoObj.labelKey || 'repo')) {
-          if (repoObj.labelKey === 'backendRepo') label = t('sections.projects.backendRepo') || 'Backend Repository';
-          if (repoObj.labelKey === 'frontendRepo') label = t('sections.projects.frontendRepo') || 'Frontend Repository';
-        }
+        let label = t('sections.projects.viewRepository') || 'View Repository';
         html += `<a href="${repoObj.url}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${label}</a>`;
       });
     } else if (data.repo) {
-      html += `<a href="${data.repo}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${t('sections.projects.viewProject')}</a>`;
+      html += `<a href="${data.repo}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${t('sections.projects.viewRepository') || 'View Repository'}</a>`;
     }
     html += '</div>';
     return html;
@@ -325,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => { modal.style.display = 'none'; }, 200);
     });
   }
-  // Close modal on outside click
+
   if (modal) {
     modal.addEventListener('click', function(e) {
       if (e.target === modal) {
