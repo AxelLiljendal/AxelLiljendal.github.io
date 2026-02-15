@@ -1,6 +1,41 @@
-/* Override for modal project-link: only scale, no color change */
-.project-modal .project-link:hover {
-  background: #fff !important;
+/* Maximum specificity for HealthcareSDLC modal tag */
+.project-modal.show[data-project="healthcaresdlc"] .tag {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%) !important;
+}
+/* Maximum specificity for modal tag gradients */
+.project-modal.show[data-project="plantswap"] .tag {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
+}
+.project-modal.show[data-project="homi"] .tag {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+/* Modal tags match project card tag gradients exactly */
+.project-modal[data-project="schackeriet"] .tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+/* Modal tags match project card tag gradients exactly */
+.project-modal[data-project="schackeriet"] .tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.project-modal[data-project="claims"] .tag {
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
+}
+.project-modal[data-project="personality-miner"] .tag {
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+}
+.project-modal[data-project="finance-tracker"] .tag {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+.project-modal[data-project="plantswap"] .tag {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important; /* PlantSwap */
+}
+}
+.project-modal[data-project="homi"] .tag {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important; /* HOMI */
+}
+.project-modal[data-project="budget-tracker"] .tag {
+  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%);
+}
   color: var(--link-color) !important;
   border-color: var(--link-color) !important;
   transform: scale(1.05);
@@ -383,7 +418,6 @@ header nav a:focus {
 .header-name:focus {
   color: var(--link-hover);
   text-decoration: none;
-  background: none;
 }
 
 /* Theme Selector */
@@ -1236,7 +1270,7 @@ section {
 }
 
 .project-card:nth-child(6) .tag {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); /* HealthcareSDLC */
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); /* HealthcareSDLC */
 }
 
 .project-card:nth-child(7) .project-image {

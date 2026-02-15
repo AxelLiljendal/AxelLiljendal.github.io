@@ -347,9 +347,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   seeMoreBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
-      const projectKey = btn.getAttribute('data-project');
+      let projectKey = btn.getAttribute('data-project');
       if (btn.classList.contains('disabled')) return;
+      // Map projectKey for modal tag color fix
+      if (projectKey === 'homi') projectKey = 'homi';
+      if (projectKey === 'plantswap') projectKey = 'plantswap';
       modalBody.innerHTML = renderModalContent(projectKey);
+      modal.setAttribute('data-project', projectKey);
       modal.classList.add('show');
       modal.style.display = 'flex';
     });
