@@ -295,7 +295,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (data.repos && Array.isArray(data.repos)) {
       data.repos.forEach(repoObj => {
-        let label = t('sections.projects.viewRepository') || 'View Repository';
+        let label = '';
+        if (repoObj.labelKey === 'backendRepo') {
+          label = t('sections.projects.backendRepo') || 'Backend Repository';
+        } else if (repoObj.labelKey === 'frontendRepo') {
+          label = t('sections.projects.frontendRepo') || 'Frontend Repository';
+        } else {
+          label = t('sections.projects.viewRepository') || 'View Repository';
+        }
         html += `<a href="${repoObj.url}" target="_blank" class="project-link" style="margin-bottom:0.5em;">${label}</a>`;
       });
     } else if (data.repo) {
