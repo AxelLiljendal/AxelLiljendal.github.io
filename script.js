@@ -255,7 +255,11 @@ document.addEventListener('DOMContentLoaded', function () {
       repos: [
         { labelKey: 'backendRepo', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds' },
         { labelKey: 'frontendRepo', url: 'https://github.com/Larsin15/HealthCareSDLC-CodeNerds-Frontend' }
-      ]
+      ],
+      contributions: {
+        sv: "Bidragit med backendutveckling, API-design, databasmodellering, CI/CD-pipelines, och DevOps/DevSecOps-praktiker. Deltagit i teamkommunikation och kodgranskning.",
+        en: "Contributed with backend development, API design, database modeling, CI/CD pipelines, and DevOps/DevSecOps practices. Participated in team communication and code review."
+      }
     },
     homi: {
       key: 'project3',
