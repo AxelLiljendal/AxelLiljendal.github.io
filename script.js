@@ -226,7 +226,11 @@ document.addEventListener('DOMContentLoaded', function () {
       key: 'project7',
       tags: ['TypeScript', 'React', 'Vercel', 'Shopify', 'E-commerce', 'HTML/CSS'],
       live: 'https://www.schackeriet.se/sv',
-      repo: null
+      repo: null,
+      contributions: {
+        sv: "Bidragit med frontendutveckling i TypeScript, integration av Shopify för produkthantering och checkout, buggrättning, och implementation av nya funktioner. Deltagit i teamkommunikation och kodgranskning.",
+        en: "Contributed with frontend development in TypeScript, Shopify integration for product management and checkout, bug fixing, and implementation of new features. Participated in team communication and code review."
+      }
     },
     claims: {
       key: 'project8',
