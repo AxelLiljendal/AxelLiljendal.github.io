@@ -1,3 +1,88 @@
+.project-card:nth-child(3) .project-image,
+.project-card:nth-child(4) .project-image {
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
+}
+
+.project-card:nth-child(3) .tag,
+.project-card:nth-child(4) .tag {
+  background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
+}
+
+
+.project-card:nth-child(2) .see-more-btn,
+.project-card:nth-child(3) .see-more-btn,
+.project-card:nth-child(4) .see-more-btn {
+  background: #fff !important;
+  color: var(--link-color) !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.project-card:nth-child(2) .see-more-btn:hover,
+.project-card:nth-child(3) .see-more-btn:hover,
+.project-card:nth-child(4) .see-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+/* Project Details Modal */
+.project-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.65);
+  align-items: center;
+  justify-content: center;
+}
+
+.project-modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--card-bg, #fff);
+  margin: auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  position: relative;
+  animation: modalFadeIn 0.25s;
+}
+
+@keyframes modalFadeIn {
+  from { transform: translateY(40px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--text-color, #333);
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 2;
+  transition: color 0.2s;
+}
+.close-modal:hover {
+  color: var(--accent-primary, #2563eb);
+}
+
+#modal-body {
+  margin-top: 1.5rem;
+}
 /* Modern Professional Design System - Light Mode (Default) */
 html,
 :root {
@@ -1105,21 +1190,6 @@ section {
   background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
 }
 
-.project-card:nth-child(3) .project-image {
-  background: linear-gradient(135deg, #2fc660 0%, #1fd4b8 100%);
-}
-
-.project-card:nth-child(3) .tag {
-  background: linear-gradient(135deg, #2fc660 0%, #1fd4b8 100%);
-}
-
-.project-card:nth-child(4) .project-image {
-  background: linear-gradient(135deg, #f74078 0%, #fbc617 100%);
-}
-
-.project-card:nth-child(4) .tag {
-  background: linear-gradient(135deg, #f74078 0%, #fbc617 100%);
-}
 
 .project-card:nth-child(5) .project-image {
   background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
