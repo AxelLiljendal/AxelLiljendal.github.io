@@ -1,3 +1,11 @@
+/* Override for modal project-link: only scale, no color change */
+.project-modal .project-link:hover {
+  background: #fff !important;
+  color: var(--link-color) !important;
+  border-color: var(--link-color) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
 .project-card:nth-child(3) .project-image,
 .project-card:nth-child(4) .project-image {
   background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
