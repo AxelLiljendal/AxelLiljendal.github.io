@@ -32,7 +32,8 @@
   "sections": {
     "professionalSummary": {
       "title": "Sammanfattning",
-      "content": "Jag studerar till fullstack utvecklare med fokus på Java och React. Jag gillar att lösa problem och skapa användarvänliga lösningar. Van att arbeta i team och utveckla moderna webbapplikationer."
+      "content": "Jag studerar till fullstack utvecklare med fokus på Java och React. Jag gillar att lösa problem och skapa användarvänliga lösningar. Van att arbeta i team och utveckla moderna webbapplikationer.",
+      "experienceBrief": "Jag har praktisk erfarenhet av att utveckla moderna webbapplikationer, både frontend och backend, med fokus på kvalitet, samarbete och problemlösning. Genom utbildning och projekt har jag tillämpat aktuella tekniker och arbetssätt i verkliga utvecklingsmiljöer."
     },
     "education": {
       "title": "Utbildning",
