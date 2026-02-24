@@ -1,7 +1,7 @@
 {
   "title": "Software Developer",
   "nav": {
-    "professionalSummary": "Professional Summary",
+    "professionalSummary": "Summary",
     "education": "Education",
     "experience": "Experience",
     "skills": "Skills",
@@ -31,7 +31,7 @@
   },
   "sections": {
     "professionalSummary": {
-      "title": "Professional Summary",
+      "title": "Summary",
       "content": "Fullstack developer student at Teknikhögskolan (2-year YH program) with a primary focus on Java backend development and React frontend. Experienced in building structured, maintainable applications with emphasis on clean architecture, RESTful APIs, and database design.\n\nStrong foundation in databases, security principles, DevOps and DevSecOps practices, including CI/CD workflows and version control using Git with structured branching strategies. Accustomed to working in agile environments with iterative development, code reviews, and collaborative teamwork.\n\nDriven by problem-solving, continuous learning, and writing scalable, secure, and production-oriented code."
     },
     "education": {
