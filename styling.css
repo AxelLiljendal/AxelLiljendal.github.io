@@ -443,6 +443,12 @@ header nav a:focus {
   touch-action: manipulation;
 }
 
+html:not(.dark-mode) #theme-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
 #theme-toggle svg {
   width: 28px;
   height: 28px;
@@ -453,6 +459,11 @@ header nav a:focus {
 
 #theme-toggle:hover,
 #theme-toggle:focus {
+  outline: none;
+  background: none !important;
+  box-shadow: none !important;
+}
+#theme-toggle:hover {
   transform: scale(1.15);
   outline: none;
 }
@@ -495,6 +506,12 @@ header nav a:focus {
 #lang-toggle:focus {
   color: var(--link-hover);
   outline: none;
+  background: none !important;
+  box-shadow: none !important;
+}
+#lang-toggle:hover {
+  color: var(--link-hover);
+  outline: none;
 }
 
 .lang-dropdown {
@@ -530,6 +547,12 @@ header nav a:focus {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+html:not(.dark-mode) .lang-option:focus {
+  outline: none;
+  box-shadow: none;
+  background: none !important;
 }
 
 .lang-option:hover {
