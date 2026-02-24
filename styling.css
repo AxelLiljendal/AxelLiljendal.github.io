@@ -375,13 +375,21 @@ header nav a {
   font-weight: 450;
   font-size: 1.1rem;
   letter-spacing: -0.01em;
-  transition: color 0.2s;
+  transition: color 0.2s, background 0.2s;
 }
 
 header nav a:hover,
+header nav a:focus,
+header nav a:hover,
+header nav a:focus,
+header nav a:hover,
 header nav a:focus {
-  color: var(--link-hover);
+  color: #94a3b8;
+  background: none;
   text-decoration: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .header-name {
