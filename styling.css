@@ -416,7 +416,6 @@ header nav a:focus {
 
 .header-name:hover,
 .header-name:focus {
-  color: var(--link-hover);
   text-decoration: none;
   background: none;
   box-shadow: none;
