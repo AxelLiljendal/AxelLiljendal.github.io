@@ -4,7 +4,7 @@
     "professionalSummary": "Sammanfattning",
     "education": "Utbildning",
     "experience": "Erfarenhet",
-    "skills": "Färdigheter",
+    "skills": "Tech Stack",
     "interests": "Intressen",
     "projects": "Projekt"
   },
@@ -114,7 +114,7 @@
       }
     },
     "skills": {
-      "title": "Färdigheter",
+      "title": "Tech Stack",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
     },
     "interests": {

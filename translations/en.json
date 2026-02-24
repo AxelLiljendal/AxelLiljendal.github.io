@@ -4,7 +4,7 @@
     "professionalSummary": "Summary",
     "education": "Education",
     "experience": "Experience",
-    "skills": "Skills",
+    "skills": "Tech Stack",
     "interests": "Interests",
     "projects": "Projects"
   },
@@ -113,7 +113,7 @@
       }
     },
     "skills": {
-      "title": "Skills",
+      "title": "Tech Stack",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Sed euismod, nisl eu consectetur consectetur, nisi nisi euismod nisi, euismod euismod nisi nisi euismod. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod."
     },
     "interests": {
