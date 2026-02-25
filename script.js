@@ -176,6 +176,13 @@ document.addEventListener('DOMContentLoaded', function () {
       html.classList.remove('dark-mode');
     }
 
+    // Force repaint for mobile browsers
+    html.style.display = 'none';
+    // Use requestAnimationFrame for best compatibility
+    requestAnimationFrame(() => {
+      html.style.display = '';
+    });
+
     toggleBtn.innerHTML = darkMode ? sunSVG : moonSVG;
 
     const ariaKey = darkMode ? 'theme.lightMode' : 'theme.darkMode';
