@@ -134,11 +134,11 @@
       "privateProject": "Private Project",
       "project1": {
         "title": "Budget Tracker",
-        "description": "A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories."
+        "description": "A Java Spring Boot application for tracking personal finances by managing income and expenses with structured budget categories, developed independently as a solo project."
       },
       "project2": {
         "title": "Plantswap",
-        "description": "A Spring Boot marketplace application enabling users to buy, sell, and trade plants with other enthusiasts in a community-driven platform."
+        "description": "A Spring Boot marketplace application enabling users to buy, sell, and trade plants with other enthusiasts in a community-driven platform, created as a solo project."
       },
       "project3": {
         "title": "Homi",
@@ -150,7 +150,7 @@
       },
       "project5": {
         "title": "Finance Tracker",
-        "description": "A comprehensive personal finance tracking application developed as a solo project, featuring full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
+        "description": "A personal finance tracking application, designed and built as a solo project, featuring full CI/CD implementation, automated testing, and code quality checks. Manages expenses, income, budgets, and financial goals."
       },
       "project6": {
         "title": "Personality Miner",
@@ -158,11 +158,11 @@
       },
       "project7": {
         "title": "Schackeriet",
-        "description": "E-commerce platform for chess products and community connecting Swedish chess enthusiasts with clubs and products. Developed frontend with TypeScript, integrated Shopify for product management and checkout, and deployed on Vercel."
+        "description": "An e-commerce platform for chess products and community connecting Swedish chess enthusiasts with clubs and products, developed as part of a work-based learning course."
       },
       "project8": {
         "title": "Claims",
-        "description": "Enterprise application for handling warranty cases and business claims. Developed Java backend with Supabase and MongoDB integration, React frontend, comprehensive testing suite, and ERP system integration for seamless business workflows."
+        "description": "Enterprise application for handling warranty cases and business claims, created during a work-based learning course. Developed Java backend with Supabase and MongoDB integration, React frontend, comprehensive testing suite, and ERP system integration for seamless business workflows."
       }
     },
     "challengesAndSolutions": {

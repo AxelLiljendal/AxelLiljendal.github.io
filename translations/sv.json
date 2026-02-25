@@ -135,11 +135,11 @@
       "privateProject": "Privat projekt",
       "project1": {
         "title": "Budget Tracker",
-        "description": "En Java Spring Boot-applikation för att spåra personlig ekonomi genom att hantera inkomster och utgifter med strukturerade budgetkategorier."
+        "description": "En Java Spring Boot-applikation för att spåra personlig ekonomi genom att hantera inkomster och utgifter med strukturerade budgetkategorier, utvecklad självständigt som soloprojekt."
       },
       "project2": {
         "title": "Plantswap",
-        "description": "En Spring Boot-marknadsplatsapplikation som gör det möjligt för användare att köpa, sälja och byta växter med andra entusiaster i en community-driven plattform."
+        "description": "En Spring Boot-marknadsplatsapplikation som gör det möjligt för användare att köpa, sälja och byta växter med andra entusiaster i en community-driven plattform, skapad som soloprojekt."
       },
       "project3": {
         "title": "Homi",
@@ -151,7 +151,7 @@
       },
       "project5": {
         "title": "Finance Tracker",
-        "description": "En omfattande personlig ekonomispårningsapplikation utvecklad som soloprojekt, med fullständig CI/CD-implementering, automatiserad testning och kodkvalitetskontroller. Hanterar utgifter, inkomster, budgetar och finansiella mål."
+        "description": "En personlig ekonomi applikation, designad och byggd som soloprojekt, med fullständig CI/CD-implementering, automatiserad testning och kodkvalitetskontroller. Hanterar utgifter, inkomster, budgetar och finansiella mål."
       },
       "project6": {
         "title": "Personality Miner",
@@ -159,11 +159,11 @@
       },
       "project7": {
         "title": "Schackeriet",
-        "description": "E-handelsplattform för schackprodukter och gemenskap som kopplar samman svenska schackentusiaster med klubbar och produkter. Utvecklade frontend med TypeScript, integrerade Shopify för produkthantering och checkout, och distribuerade på Vercel."
+        "description": "En e-handelsplattform för schackprodukter och gemenskap som kopplar samman svenska schackentusiaster med klubbar och produkter, utvecklad som del av kursen Lärande i arbete."
       },
       "project8": {
         "title": "Claims",
-        "description": "Entreprenörapplikation för hantering av garantifall och affärsreklamationer. Utvecklade Java backend med Supabase och MongoDB-integrering, React frontend, omfattande testsvit och ERP-systemintegrering för sömlösa affärsarbetsflöden."
+        "description": "Entreprenörapplikation för hantering av garantifall och affärsreklamationer, skapad under kursen Lärande i arbete. Utvecklade Java backend med Supabase och MongoDB-integrering, React frontend, omfattande testsvit och ERP-systemintegrering för sömlösa affärsarbetsflöden."
       }
     },
     "challengesAndSolutions": {
