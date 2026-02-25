@@ -1201,9 +1201,9 @@ section {
 
 
 .project-link:hover {
-  background: var(--link-color);
-  color: #fff;
-  border-color: var(--link-hover);
+  background: #fff;
+  color: var(--link-color);
+  border-color: var(--link-color);
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
 }
 
