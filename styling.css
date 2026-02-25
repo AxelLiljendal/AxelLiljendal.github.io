@@ -40,7 +40,7 @@
   border-color: var(--link-color) !important;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
-}
+
 .project-card:nth-child(3) .project-image,
 .project-card:nth-child(4) .project-image {
   background: linear-gradient(135deg, #3a8dd9 0%, #00c5d4 100%);
@@ -1213,7 +1213,6 @@ section {
   color: var(--link-color) !important;
   border-color: var(--link-color) !important;
 }
-}
 
 .project-link.disabled {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -1451,6 +1450,8 @@ button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .download-cv-btn:hover,
