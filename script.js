@@ -316,15 +316,18 @@ document.addEventListener('DOMContentLoaded', function () {
       html += '<div class="project-tags">' + data.tags.map(tag => `<span class="tag">${tag}</span>`).join('') + '</div>';
     }
 
-        const lang = i18n.currentLanguage || 'sv';
-        const challengeKey = 'project' + (Object.keys(projectDetails).indexOf(projectKey) + 1);
-        const items = (i18n.translations.sections?.challengesAndSolutions?.[challengeKey]) || [];
-        html += `<div class="project-challenges" style="margin-top:1.5em;">
-          <h3>${lang === 'sv' ? 'Utmaningar och lösningar' : 'Challenges and solutions'}</h3>
-          <ul style="margin-left:1em;">
-            ${items.map(item => item ? `<li>${item}</li>` : '').join('')}
-          </ul>
-        </div>`;
+        // Only show challenges and solutions for projects except schackeriet and claims
+        if (projectKey !== 'schackeriet' && projectKey !== 'claims') {
+          const lang = i18n.currentLanguage || 'sv';
+          const challengeKey = 'project' + (Object.keys(projectDetails).indexOf(projectKey) + 1);
+          const items = (i18n.translations.sections?.challengesAndSolutions?.[challengeKey]) || [];
+          html += `<div class="project-challenges" style="margin-top:1.5em;">
+            <h3>${lang === 'sv' ? 'Utmaningar och lösningar' : 'Challenges and solutions'}</h3>
+            <ul style="margin-left:1em;">
+              ${items.map(item => item ? `<li>${item}</li>` : '').join('')}
+            </ul>
+          </div>`;
+        }
     if (data.contributions) {
       const lang = i18n.currentLanguage || 'sv';
       const contrib = data.contributions[lang];
