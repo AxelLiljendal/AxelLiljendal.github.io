@@ -165,6 +165,11 @@
         "title": "Claims",
         "description": "Entreprenörapplikation för hantering av garantifall och affärsreklamationer. Utvecklade Java backend med Supabase och MongoDB-integrering, React frontend, omfattande testsvit och ERP-systemintegrering för sömlösa affärsarbetsflöden."
       }
+    },
+    "challengesAndSolutions": {
+      "project1": [
+        "JSON: Utmaningen jag stötte på med JSON var att ... För att lösa detta gjorde jag X och Y."
+      ]
     }
   },
   "aria": {

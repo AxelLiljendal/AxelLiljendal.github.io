@@ -315,6 +315,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (data.tags && data.tags.length) {
       html += '<div class="project-tags">' + data.tags.map(tag => `<span class="tag">${tag}</span>`).join('') + '</div>';
     }
+        if (projectKey === 'budget-tracker') {
+          const lang = i18n.currentLanguage || 'sv';
+          const items = (i18n.translations.sections?.challengesAndSolutions?.project1) || [];
+          if (items && items.length) {
+            html += `<div class="project-challenges" style="margin-top:1.5em;">
+              <h3>${lang === 'sv' ? 'Utmaningar och lösningar' : 'Challenges and solutions'}</h3>
+              <ul style="margin-left:1em;">
+                ${items.map(item => `<li>${item}</li>`).join('')}
+              </ul>
+            </div>`;
+          }
+    }
     if (data.contributions) {
       const lang = i18n.currentLanguage || 'sv';
       const contrib = data.contributions[lang];

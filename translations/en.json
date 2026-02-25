@@ -164,6 +164,11 @@
         "title": "Claims",
         "description": "Enterprise application for handling warranty cases and business claims. Developed Java backend with Supabase and MongoDB integration, React frontend, comprehensive testing suite, and ERP system integration for seamless business workflows."
       }
+    },
+    "challengesAndSolutions": {
+      "project1": [
+        "JSON: The challenge I faced with JSON was that ... To solve this I did X and Y."
+      ]
     }
   },
   "aria": {
