@@ -23,23 +23,8 @@
 .project-modal[data-project="personality-miner"] .tag {
   background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
 }
-.project-modal[data-project="finance-tracker"] .tag {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
-.project-modal[data-project="plantswap"] .tag {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important; /* PlantSwap */
-}
-}
-.project-modal[data-project="homi"] .tag {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important; /* HOMI */
-}
-.project-modal[data-project="budget-tracker"] .tag {
-  background: linear-gradient(135deg, #ffb84d 0%, #19547b 100%);
-}
-  color: var(--link-color) !important;
-  border-color: var(--link-color) !important;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+/* Fix broken braces and selectors above */
 
 .project-card:nth-child(3) .project-image,
 .project-card:nth-child(4) .project-image {
@@ -87,8 +72,10 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 0;
   overflow: auto;
   background: rgba(0,0,0,0.65);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -99,7 +86,7 @@
 
 .modal-content {
   background: var(--card-bg, #fff);
-  margin: auto;
+  margin: 0;
   padding: 2rem 2.5rem;
   border-radius: 16px;
   max-width: 500px;
