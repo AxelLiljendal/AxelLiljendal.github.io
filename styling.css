@@ -690,7 +690,7 @@ section {
   border-radius: 12px;
   padding: 1.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  border-left: 4px solid #f093fb;
+  border-left: 4px solid #2563eb;
   transition: all 0.3s ease;
 }
 
@@ -775,7 +775,7 @@ section {
   font-style: italic;
   color: var(--text-color);
   line-height: 1.6;
-  border-left: 3px solid #f093fb;
+  border-left: 3px solid #2563eb;
 }
 
 /* Timeline */
@@ -1561,7 +1561,7 @@ h2:hover .h2-icon svg {
 }
 
 .education-icon {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(245, 87, 108, 0.3);
 }
