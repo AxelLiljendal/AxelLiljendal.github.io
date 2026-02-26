@@ -1,3 +1,52 @@
+/* Tech Stack Section Headers */
+.tech-stack-section {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tech-stack-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-primary, #2563eb);
+}
+/* Tech Stack Icon Grid */
+.tech-stack-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tech-item:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.tech-item img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+.tech-item span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color, #333);
+}
 /* Maximum specificity for HealthcareSDLC modal tag */
 .project-modal.show[data-project="healthcaresdlc"] .tag {
   background: linear-gradient(135deg, #30cfd0 0%, #330867 100%) !important;
